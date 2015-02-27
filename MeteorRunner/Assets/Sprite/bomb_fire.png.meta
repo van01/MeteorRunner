@@ -1,0 +1,306 @@
+fileFormatVersion: 2
+guid: aeeaaadd64fff43fc834fa49ce1fb2f5
+TextureImporter:
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 1024
+  textureSettings:
+    filterMode: -1
+    aniso: 1
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: bomb_fire_0
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 65
+        width: 25
+        height: 29
+      alignment: 9
+      pivot: {x: .5, y: .0548524521}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: bomb_fire_1
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 65
+        width: 27
+        height: 32
+      alignment: 9
+      pivot: {x: .54208231, y: .0497102737}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: bomb_fire_2
+      rect:
+        serializedVersion: 2
+        x: 63
+        y: 65
+        width: 28
+        height: 34
+      alignment: 9
+      pivot: {x: .51217407, y: .0501278155}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: bomb_fire_3
+      rect:
+        serializedVersion: 2
+        x: 94
+        y: 65
+        width: 28
+        height: 36
+      alignment: 9
+      pivot: {x: .516231835, y: .0504991747}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: bomb_fire_4
+      rect:
+        serializedVersion: 2
+        x: 125
+        y: 65
+        width: 29
+        height: 46
+      alignment: 9
+      pivot: {x: .49608165, y: .0370509923}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: bomb_fire_5
+      rect:
+        serializedVersion: 2
+        x: 155
+        y: 63
+        width: 36
+        height: 49
+      alignment: 9
+      pivot: {x: .499999583, y: .0748002976}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: bomb_fire_6
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 64
+        width: 32
+        height: 49
+      alignment: 9
+      pivot: {x: .5, y: .0556520745}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: bomb_fire_7
+      rect:
+        serializedVersion: 2
+        x: 227
+        y: 64
+        width: 32
+        height: 49
+      alignment: 9
+      pivot: {x: .5, y: .0510144904}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: bomb_fire_8
+      rect:
+        serializedVersion: 2
+        x: 262
+        y: 64
+        width: 32
+        height: 51
+      alignment: 9
+      pivot: {x: .5, y: .0534696393}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: bomb_fire_9
+      rect:
+        serializedVersion: 2
+        x: 297
+        y: 64
+        width: 32
+        height: 53
+      alignment: 9
+      pivot: {x: .5, y: .0493080579}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: bomb_fire_10
+      rect:
+        serializedVersion: 2
+        x: 332
+        y: 64
+        width: 32
+        height: 53
+      alignment: 9
+      pivot: {x: .5, y: .0493081994}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: bomb_fire_11
+      rect:
+        serializedVersion: 2
+        x: 367
+        y: 64
+        width: 32
+        height: 55
+      alignment: 9
+      pivot: {x: .553260803, y: .0475151762}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: bomb_fire_12
+      rect:
+        serializedVersion: 2
+        x: 402
+        y: 64
+        width: 31
+        height: 55
+      alignment: 9
+      pivot: {x: .518326283, y: .0454492755}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: bomb_fire_13
+      rect:
+        serializedVersion: 2
+        x: 436
+        y: 65
+        width: 31
+        height: 52
+      alignment: 9
+      pivot: {x: .5, y: .0327760242}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: bomb_fire_14
+      rect:
+        serializedVersion: 2
+        x: 470
+        y: 66
+        width: 30
+        height: 52
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: bomb_fire_15
+      rect:
+        serializedVersion: 2
+        x: 503
+        y: 67
+        width: 32
+        height: 51
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: bomb_fire_18
+      rect:
+        serializedVersion: 2
+        x: 538
+        y: 67
+        width: 31
+        height: 52
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: bomb_fire_19
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 4
+        width: 29
+        height: 52
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: bomb_fire_20
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 6
+        width: 30
+        height: 51
+      alignment: 9
+      pivot: {x: .5037871, y: -.0334185809}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: bomb_fire_21
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 7
+        width: 28
+        height: 51
+      alignment: 9
+      pivot: {x: .508116066, y: -.0490139127}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: bomb_fire_22
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 7
+        width: 27
+        height: 52
+      alignment: 9
+      pivot: {x: .495791674, y: -.0480713397}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: bomb_fire_23
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 34
+        width: 21
+        height: 25
+      alignment: 9
+      pivot: {x: .5, y: -1.14999998}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: bomb_fire_24
+      rect:
+        serializedVersion: 2
+        x: 155
+        y: 43
+        width: 21
+        height: 16
+      alignment: 9
+      pivot: {x: .5, y: -2.4000001}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: bomb_fire_40
+      rect:
+        serializedVersion: 2
+        x: 179
+        y: 44
+        width: 21
+        height: 16
+      alignment: 9
+      pivot: {x: .5, y: -2.41000009}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: bomb_fire_41
+      rect:
+        serializedVersion: 2
+        x: 203
+        y: 47
+        width: 21
+        height: 11
+      alignment: 9
+      pivot: {x: .5, y: -3.76999998}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: bomb_fire_42
+      rect:
+        serializedVersion: 2
+        x: 227
+        y: 49
+        width: 19
+        height: 7
+      alignment: 9
+      pivot: {x: .5, y: -6.19999981}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 

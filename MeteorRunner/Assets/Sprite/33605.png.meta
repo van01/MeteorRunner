@@ -1,0 +1,246 @@
+fileFormatVersion: 2
+guid: 7dae8dd50d28f4fefbba1b7b41c0b143
+TextureImporter:
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 1024
+  textureSettings:
+    filterMode: -1
+    aniso: 1
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: 33605_0
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 870
+        width: 37
+        height: 53
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: 33605_1
+      rect:
+        serializedVersion: 2
+        x: 45
+        y: 870
+        width: 43
+        height: 60
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: 33605_2
+      rect:
+        serializedVersion: 2
+        x: 93
+        y: 870
+        width: 53
+        height: 50
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: 33605_3
+      rect:
+        serializedVersion: 2
+        x: 153
+        y: 870
+        width: 46
+        height: 51
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: 33605_4
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 870
+        width: 39
+        height: 52
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: 33605_5
+      rect:
+        serializedVersion: 2
+        x: 247
+        y: 870
+        width: 41
+        height: 59
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: 33605_6
+      rect:
+        serializedVersion: 2
+        x: 295
+        y: 870
+        width: 50
+        height: 51
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: 33605_7
+      rect:
+        serializedVersion: 2
+        x: 358
+        y: 870
+        width: 46
+        height: 52
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: 33605_8
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 948
+        width: 36
+        height: 59
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: 33605_9
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 948
+        width: 35
+        height: 57
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: 33605_10
+      rect:
+        serializedVersion: 2
+        x: 94
+        y: 948
+        width: 36
+        height: 56
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: 33605_11
+      rect:
+        serializedVersion: 2
+        x: 137
+        y: 948
+        width: 36
+        height: 57
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: 33605_12
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 948
+        width: 36
+        height: 59
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: 33605_13
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 948
+        width: 36
+        height: 57
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: 33605_14
+      rect:
+        serializedVersion: 2
+        x: 267
+        y: 948
+        width: 36
+        height: 56
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: 33605_15
+      rect:
+        serializedVersion: 2
+        x: 310
+        y: 948
+        width: 36
+        height: 57
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: 33605_16
+      rect:
+        serializedVersion: 2
+        x: 13
+        y: 811
+        width: 55
+        height: 54
+      alignment: 9
+      pivot: {x: .544110239, y: -.169025555}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: 33605_17
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 812
+        width: 62
+        height: 42
+      alignment: 9
+      pivot: {x: .515088141, y: -.239254907}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: 33605_18
+      rect:
+        serializedVersion: 2
+        x: 171
+        y: 802
+        width: 48
+        height: 61
+      alignment: 9
+      pivot: {x: .61196202, y: 1.00057628e-06}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: 33605_19
+      rect:
+        serializedVersion: 2
+        x: 226
+        y: 801
+        width: 70
+        height: 24
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 

@@ -1,0 +1,516 @@
+fileFormatVersion: 2
+guid: 4a30406b8f347403bab04484fc4cd8d1
+TextureImporter:
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 1024
+  textureSettings:
+    filterMode: -1
+    aniso: 1
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: alphabat_0
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 133
+        width: 32
+        height: 32
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: alphabat_1
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 133
+        width: 32
+        height: 32
+      alignment: 1
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: alphabat_2
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 133
+        width: 32
+        height: 32
+      alignment: 1
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: alphabat_3
+      rect:
+        serializedVersion: 2
+        x: 105
+        y: 133
+        width: 32
+        height: 32
+      alignment: 1
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: alphabat_4
+      rect:
+        serializedVersion: 2
+        x: 139
+        y: 133
+        width: 32
+        height: 32
+      alignment: 1
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: alphabat_5
+      rect:
+        serializedVersion: 2
+        x: 173
+        y: 133
+        width: 32
+        height: 32
+      alignment: 1
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: alphabat_6
+      rect:
+        serializedVersion: 2
+        x: 207
+        y: 133
+        width: 32
+        height: 32
+      alignment: 1
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: alphabat_7
+      rect:
+        serializedVersion: 2
+        x: 241
+        y: 133
+        width: 32
+        height: 32
+      alignment: 1
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: alphabat_8
+      rect:
+        serializedVersion: 2
+        x: 275
+        y: 133
+        width: 16
+        height: 32
+      alignment: 1
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: alphabat_9
+      rect:
+        serializedVersion: 2
+        x: 293
+        y: 133
+        width: 32
+        height: 32
+      alignment: 1
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: alphabat_10
+      rect:
+        serializedVersion: 2
+        x: 327
+        y: 133
+        width: 32
+        height: 32
+      alignment: 1
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: alphabat_11
+      rect:
+        serializedVersion: 2
+        x: 361
+        y: 133
+        width: 32
+        height: 32
+      alignment: 1
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: alphabat_12
+      rect:
+        serializedVersion: 2
+        x: 395
+        y: 133
+        width: 32
+        height: 32
+      alignment: 1
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: alphabat_13
+      rect:
+        serializedVersion: 2
+        x: 429
+        y: 133
+        width: 32
+        height: 32
+      alignment: 1
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: alphabat_14
+      rect:
+        serializedVersion: 2
+        x: 463
+        y: 133
+        width: 32
+        height: 32
+      alignment: 1
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: alphabat_15
+      rect:
+        serializedVersion: 2
+        x: 497
+        y: 133
+        width: 32
+        height: 32
+      alignment: 1
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: alphabat_16
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 99
+        width: 32
+        height: 32
+      alignment: 1
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: alphabat_17
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 99
+        width: 32
+        height: 32
+      alignment: 1
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: alphabat_18
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 99
+        width: 32
+        height: 32
+      alignment: 1
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: alphabat_19
+      rect:
+        serializedVersion: 2
+        x: 105
+        y: 99
+        width: 32
+        height: 32
+      alignment: 1
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: alphabat_20
+      rect:
+        serializedVersion: 2
+        x: 139
+        y: 99
+        width: 32
+        height: 32
+      alignment: 1
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: alphabat_21
+      rect:
+        serializedVersion: 2
+        x: 173
+        y: 99
+        width: 32
+        height: 32
+      alignment: 1
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: alphabat_22
+      rect:
+        serializedVersion: 2
+        x: 207
+        y: 99
+        width: 32
+        height: 32
+      alignment: 1
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: alphabat_23
+      rect:
+        serializedVersion: 2
+        x: 241
+        y: 99
+        width: 32
+        height: 32
+      alignment: 1
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: alphabat_24
+      rect:
+        serializedVersion: 2
+        x: 275
+        y: 99
+        width: 32
+        height: 32
+      alignment: 1
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: alphabat_25
+      rect:
+        serializedVersion: 2
+        x: 309
+        y: 99
+        width: 32
+        height: 32
+      alignment: 1
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: alphabat_26
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 65
+        width: 16
+        height: 32
+      alignment: 1
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: alphabat_27
+      rect:
+        serializedVersion: 2
+        x: 21
+        y: 65
+        width: 32
+        height: 32
+      alignment: 1
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: alphabat_28
+      rect:
+        serializedVersion: 2
+        x: 55
+        y: 65
+        width: 32
+        height: 32
+      alignment: 1
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: alphabat_29
+      rect:
+        serializedVersion: 2
+        x: 89
+        y: 65
+        width: 32
+        height: 32
+      alignment: 1
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: alphabat_30
+      rect:
+        serializedVersion: 2
+        x: 123
+        y: 65
+        width: 32
+        height: 32
+      alignment: 1
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: alphabat_31
+      rect:
+        serializedVersion: 2
+        x: 157
+        y: 65
+        width: 32
+        height: 32
+      alignment: 1
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: alphabat_32
+      rect:
+        serializedVersion: 2
+        x: 191
+        y: 65
+        width: 32
+        height: 32
+      alignment: 1
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: alphabat_33
+      rect:
+        serializedVersion: 2
+        x: 225
+        y: 65
+        width: 32
+        height: 32
+      alignment: 1
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: alphabat_34
+      rect:
+        serializedVersion: 2
+        x: 259
+        y: 65
+        width: 32
+        height: 32
+      alignment: 1
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: alphabat_35
+      rect:
+        serializedVersion: 2
+        x: 293
+        y: 65
+        width: 16
+        height: 32
+      alignment: 1
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: alphabat_36
+      rect:
+        serializedVersion: 2
+        x: 311
+        y: 65
+        width: 32
+        height: 32
+      alignment: 1
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: alphabat_37
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 14
+        width: 21
+        height: 48
+      alignment: 1
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: alphabat_38
+      rect:
+        serializedVersion: 2
+        x: 27
+        y: 14
+        width: 44
+        height: 48
+      alignment: 1
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: alphabat_39
+      rect:
+        serializedVersion: 2
+        x: 74
+        y: 14
+        width: 44
+        height: 48
+      alignment: 1
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: alphabat_40
+      rect:
+        serializedVersion: 2
+        x: 121
+        y: 14
+        width: 44
+        height: 48
+      alignment: 1
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: alphabat_41
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 14
+        width: 44
+        height: 48
+      alignment: 1
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: alphabat_42
+      rect:
+        serializedVersion: 2
+        x: 215
+        y: 14
+        width: 44
+        height: 48
+      alignment: 1
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: alphabat_43
+      rect:
+        serializedVersion: 2
+        x: 262
+        y: 14
+        width: 43
+        height: 48
+      alignment: 1
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: alphabat_44
+      rect:
+        serializedVersion: 2
+        x: 308
+        y: 14
+        width: 44
+        height: 48
+      alignment: 1
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: alphabat_45
+      rect:
+        serializedVersion: 2
+        x: 355
+        y: 14
+        width: 44
+        height: 48
+      alignment: 1
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: alphabat_46
+      rect:
+        serializedVersion: 2
+        x: 402
+        y: 14
+        width: 44
+        height: 48
+      alignment: 1
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 
