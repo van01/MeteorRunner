@@ -50,6 +50,7 @@
      <Compile Include="Assets\Script\BombCreator.cs" />
      <Compile Include="Assets\Script\BombMovement.cs" />
      <Compile Include="Assets\Script\BombObject.cs" />
+     <Compile Include="Assets\Script\GUI\Number.cs" />
      <Compile Include="Assets\Script\GameManager.cs" />
      <Compile Include="Assets\Script\ObjectMovement.cs" />
      <Compile Include="Assets\Script\PlayerContoller.cs" />

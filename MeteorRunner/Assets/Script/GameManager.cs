@@ -3,10 +3,13 @@ using System.Collections;
 
 public class GameManager : MonoBehaviour {
 
+	enum eState{eSTATE_INIT, eSTATE_READY, eSTATE_INGAME, eSTATE_GAMEOVER};
+	private eState	m_state;
 	private static GameObject container;  
 	private static GameManager m_instance = null;
 	private bool m_isGameOver;
 	private float m_fGameSpeed = 1.0f;
+
 
 	public static GameManager Instance 
 	{
@@ -57,11 +60,13 @@ public class GameManager : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-	
+		changeState (eSTATE_READY);
 	}
 	
 	// Update is called once per frame
 	void Update () {
 	
 	}
+
+	void changeState (eState
 }
