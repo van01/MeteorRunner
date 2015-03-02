@@ -24,7 +24,7 @@ public class PlayerContoller : MonoBehaviour {
 			return;
 
 //		if (!m_isMouseDown) 
-		if (!Input.GetKey (KeyCode.Space))
+		if (!Input.GetButton("Fire1"))
 		{
 			m_anim.SetBool("isRun", false);
 			return;

@@ -1,6 +1,23 @@
 fileFormatVersion: 2
 guid: 50e74010234544eec9a40eb562cb4b2c
 TextureImporter:
+  fileIDToRecycleName:
+    21300000: bomb2_0
+    21300002: bomb2_1
+    21300004: bomb2_2
+    21300006: bomb2_3
+    21300008: bomb2_4
+    21300010: bomb2_5
+    21300012: bomb2_6
+    21300014: bomb2_7
+    21300016: bomb2_8
+    21300018: bomb2_9
+    21300020: bomb2_10
+    21300022: bomb2_11
+    21300024: bomb2_12
+    21300026: bomb2_13
+    21300028: bomb2_14
+    21300030: bomb2_15
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0

@@ -1,6 +1,14 @@
 fileFormatVersion: 2
 guid: 2083395cbc39f4556a1a29e86890743d
 TextureImporter:
+  fileIDToRecycleName:
+    21300000: missile_0
+    21300002: missile_1
+    21300004: missile_2
+    21300006: missile_3
+    21300008: missile_4
+    21300010: missile_5
+    21300012: missile_6
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0

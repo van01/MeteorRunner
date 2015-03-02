@@ -1,6 +1,33 @@
 fileFormatVersion: 2
 guid: aeeaaadd64fff43fc834fa49ce1fb2f5
 TextureImporter:
+  fileIDToRecycleName:
+    21300000: bomb_fire_0
+    21300002: bomb_fire_1
+    21300004: bomb_fire_2
+    21300006: bomb_fire_3
+    21300008: bomb_fire_4
+    21300010: bomb_fire_5
+    21300012: bomb_fire_6
+    21300014: bomb_fire_7
+    21300016: bomb_fire_8
+    21300018: bomb_fire_9
+    21300020: bomb_fire_10
+    21300022: bomb_fire_11
+    21300024: bomb_fire_12
+    21300026: bomb_fire_13
+    21300028: bomb_fire_14
+    21300030: bomb_fire_15
+    21300032: bomb_fire_18
+    21300034: bomb_fire_19
+    21300036: bomb_fire_20
+    21300038: bomb_fire_21
+    21300040: bomb_fire_22
+    21300042: bomb_fire_23
+    21300044: bomb_fire_24
+    21300046: bomb_fire_40
+    21300048: bomb_fire_41
+    21300050: bomb_fire_42
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0

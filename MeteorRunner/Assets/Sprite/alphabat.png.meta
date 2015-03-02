@@ -1,6 +1,54 @@
 fileFormatVersion: 2
 guid: 4a30406b8f347403bab04484fc4cd8d1
 TextureImporter:
+  fileIDToRecycleName:
+    21300000: alphabat_0
+    21300002: alphabat_1
+    21300004: alphabat_2
+    21300006: alphabat_3
+    21300008: alphabat_4
+    21300010: alphabat_5
+    21300012: alphabat_6
+    21300014: alphabat_7
+    21300016: alphabat_8
+    21300018: alphabat_9
+    21300020: alphabat_10
+    21300022: alphabat_11
+    21300024: alphabat_12
+    21300026: alphabat_13
+    21300028: alphabat_14
+    21300030: alphabat_15
+    21300032: alphabat_16
+    21300034: alphabat_17
+    21300036: alphabat_18
+    21300038: alphabat_19
+    21300040: alphabat_20
+    21300042: alphabat_21
+    21300044: alphabat_22
+    21300046: alphabat_23
+    21300048: alphabat_24
+    21300050: alphabat_25
+    21300052: alphabat_26
+    21300054: alphabat_27
+    21300056: alphabat_28
+    21300058: alphabat_29
+    21300060: alphabat_30
+    21300062: alphabat_31
+    21300064: alphabat_32
+    21300066: alphabat_33
+    21300068: alphabat_34
+    21300070: alphabat_35
+    21300072: alphabat_36
+    21300074: alphabat_37
+    21300076: alphabat_38
+    21300078: alphabat_39
+    21300080: alphabat_40
+    21300082: alphabat_41
+    21300084: alphabat_42
+    21300086: alphabat_43
+    21300088: alphabat_44
+    21300090: alphabat_45
+    21300092: alphabat_46
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
