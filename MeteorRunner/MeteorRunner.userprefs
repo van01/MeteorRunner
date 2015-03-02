@@ -1,8 +1,10 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Script\MenuScript.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Script\GameOverScript.cs">
     <Files>
-      <File FileName="Assets\Script\MenuScript.cs" Line="19" Column="31" />
+      <File FileName="Assets\Script\MenuScript.cs" Line="27" Column="52" />
+      <File FileName="Assets\Script\PlayerContoller.cs" Line="37" Column="39" />
+      <File FileName="Assets\Script\GameOverScript.cs" Line="39" Column="18" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

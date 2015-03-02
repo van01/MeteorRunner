@@ -36,7 +36,7 @@ public class GameOverScript : MonoBehaviour
 			buttonWidth,
 			buttonHeight
 			),
-			"Back to menu"
+			"Back to title"
 			)
 			)
 		{
