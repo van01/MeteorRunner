@@ -49,7 +49,7 @@ public class PlayerContoller : MonoBehaviour {
 	//주인공 사망 시 게임오버 스크립트 호출 (재시도, 나가기)
 	void OnDestroy()
 	{
-		transform.parent.gameObject.AddComponent<GameOverScript> ();
+
 	}
 
 	void OnTriggerEnter2D (Collider2D collider)
@@ -61,6 +61,6 @@ public class PlayerContoller : MonoBehaviour {
 		GameManager.Instance.isGameOver = true;
 
 		//주인공 사망
-		Destroy(gameObject);
+		transform.parent.gameObject.AddComponent<GameOverScript> ();
 	}
 }
