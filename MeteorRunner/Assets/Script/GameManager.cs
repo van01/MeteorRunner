@@ -5,8 +5,9 @@ public class GameManager : MonoBehaviour {
 
 	private static GameObject container;  
 	private static GameManager m_instance = null;
-	private bool m_isGameOver;
-	private float m_fGameSpeed = 1.0f;
+	private bool 				m_isGameOver;
+	private float 				m_fGameSpeed = 1.0f;
+	private float 				m_fScore = 0.0f;
 
 	public static GameManager Instance 
 	{
@@ -55,9 +56,18 @@ public class GameManager : MonoBehaviour {
 		}
 	}
 
+	public void addScore (float fAddScore)
+	{
+		m_fScore += (fAddScore/2);
+	}
+	public float getScore()
+	{
+		return m_fScore;
+	}
+
 	// Use this for initialization
 	void Start () {
-	
+
 	}
 	
 	// Update is called once per frame

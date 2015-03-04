@@ -36,13 +36,16 @@ public class PlayerContoller : MonoBehaviour {
 
 
 		m_vtLastPosition = this.transform.position;
-
-		m_vtLastPosition.x += m_PlayerSpeed * Time.deltaTime;
+		float fScore = m_PlayerSpeed * Time.deltaTime;
+		m_vtLastPosition.x += fScore;
 
 		if (m_vtLastPosition.x > m_vtMaxMove.x)
 		{
 			m_vtLastPosition.x = m_vtMaxMove.x;
+			fScore -= (m_vtLastPosition.x-m_vtMaxMove.x);
 		}
+
+		GameManager.Instance.addScore (fScore);
 
 		this.transform.position = m_vtLastPosition;
 	}
@@ -62,8 +65,6 @@ public class PlayerContoller : MonoBehaviour {
 
 	void OnTriggerEnter2D (Collider2D collider)
 	{
-		Debug.Log ("name : " + collider.tag);
-
 		if (collider.tag == "Bomb")
 		{
 			m_isAlive = false;
