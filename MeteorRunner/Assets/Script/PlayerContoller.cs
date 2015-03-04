@@ -7,11 +7,14 @@ public class PlayerContoller : MonoBehaviour {
 	public	float m_PlayerSpeed = 1.5f;
 	private	Animator	m_anim;
 	public bool m_isAlive	= true;
+	private Vector3 m_vtLastPosition;
+	private Vector3 m_vtMaxMove;
 
 	// Use this for initialization
 	void Start () {
 		m_anim = GetComponent<Animator> ();
-	
+
+		m_vtMaxMove = GameObject.FindGameObjectWithTag ("Block").transform.position;
 	}
 	// Update is called once per frame
 	void Update () {
@@ -32,11 +35,16 @@ public class PlayerContoller : MonoBehaviour {
 		m_anim.SetBool("isRun", true);
 
 
-		Vector3 pos = this.transform.position;
+		m_vtLastPosition = this.transform.position;
 
-		pos.x += m_PlayerSpeed * Time.deltaTime;
+		m_vtLastPosition.x += m_PlayerSpeed * Time.deltaTime;
 
-		this.transform.position = pos;
+		if (m_vtLastPosition.x > m_vtMaxMove.x)
+		{
+			m_vtLastPosition.x = m_vtMaxMove.x;
+		}
+
+		this.transform.position = m_vtLastPosition;
 	}
 
 	void OnMouseUp() {
@@ -54,13 +62,20 @@ public class PlayerContoller : MonoBehaviour {
 
 	void OnTriggerEnter2D (Collider2D collider)
 	{
-		Debug.Log ("name : " + collider.name);
+		Debug.Log ("name : " + collider.tag);
 
-		m_isAlive = false;
-		m_anim.SetBool("isAlive", false);
-		GameManager.Instance.isGameOver = true;
+		if (collider.tag == "Bomb")
+		{
+			m_isAlive = false;
+			m_anim.SetBool("isAlive", false);
+			GameManager.Instance.isGameOver = true;
 
-		//주인공 사망
-		transform.parent.gameObject.AddComponent<GameOverScript> ();
+			//주인공 사망
+			transform.parent.gameObject.AddComponent<GameOverScript> ();
+		}
+		else if (collider.tag == "Block")
+		{
+
+		}
 	}
 }

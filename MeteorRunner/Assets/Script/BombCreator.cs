@@ -40,7 +40,6 @@ public class BombCreator : MonoBehaviour {
 
 		Rigidbody2D rigid;
 
-		Debug.Log ("Random.Range (0, 1) : " + Random.Range (0, 2));
 		if (Random.Range (0, 2) == 0)
 		{
 			rigid = m_copySrc2;
