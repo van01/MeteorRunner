@@ -19,14 +19,9 @@ public class PlayerContoller : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 
-//		int touchCount = Input.touchCount;
-//		if (touchCount == 0)return;
-//		Debug.Log ("touchCount : " + touchCount);
-
-		if (!m_isAlive)
+		if (!m_isAlive || !GameManager.Instance.isIngame())
 			return;
 
-//		if (!m_isMouseDown) 
 		if (!Input.GetButton("Fire1"))
 		{
 			m_anim.SetBool("isRun", false);
@@ -69,7 +64,7 @@ public class PlayerContoller : MonoBehaviour {
 		{
 			m_isAlive = false;
 			m_anim.SetBool("isAlive", false);
-			GameManager.Instance.isGameOver = true;
+			GameManager.Instance.changeState (GameManager.STATE.STATE_GAMEOVER);
 
 			//주인공 사망
 			transform.parent.gameObject.AddComponent<GameOverScript> ();

@@ -5,6 +5,10 @@ TagManager:
   tags:
   - Block
   - Bomb
+  - UI
+  - LabelState
+  - 
+  - 
   - 
   Builtin Layer 0: Default
   Builtin Layer 1: TransparentFX
@@ -50,4 +54,8 @@ TagManager:
   - name: player
     userID: 2
     uniqueID: 811528881
+    locked: 0
+  - name: GUI
+    userID: 3
+    uniqueID: 1637810461
     locked: 0

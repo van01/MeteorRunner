@@ -17,7 +17,7 @@ public class BombCreator : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 
-		if (GameManager.Instance.isGameOver) 
+		if (!GameManager.Instance.isIngame()) 
 			return;
 
 		m_fTime += Time.deltaTime;
