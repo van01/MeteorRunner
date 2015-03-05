@@ -122,6 +122,9 @@ public class GameManager : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
+
+		Screen.orientation = ScreenOrientation.Landscape;
+
 		m_fHighScore = PlayerPrefs.GetFloat (HIGHSCORE, 0);
 
 		changeState (GameManager.STATE.STATE_READY);
