@@ -5,6 +5,7 @@ public class BombObject : MonoBehaviour {
 
 	bool m_isFired = false;
 	public float m_fAddSpeed = 0.0f;
+	public float m_fDamege = 0.0f;
 
 	void Start()
 	{

@@ -3,6 +3,9 @@ using System.Collections;
 
 public class PlayerContoller : MonoBehaviour {
 
+
+	private static float MAX_ENERGY = 100.0f;
+
 	public enum STATE
 	{
 		STOP		= 0,
@@ -23,6 +26,7 @@ public class PlayerContoller : MonoBehaviour {
 	private Vector3 	m_vtLastPosition;
 	private Vector3 	m_vtMaxMove;
 	private bool		m_isPressedRun = false;
+	private float		m_fEnergy			= MAX_ENERGY;
 
 
 	// Use this for initialization
@@ -57,17 +61,26 @@ public class PlayerContoller : MonoBehaviour {
 	{
 		if (collider.tag == "Bomb" && m_nState != STATE.BACKSTEP)
 		{
-			setState (STATE.NOCKDOWN);
+			BombObject bomb = collider.GetComponent<BombObject>();
 
-			GameManager.Instance.changeState (GameManager.STATE.STATE_GAMEOVER);
+			m_fEnergy -= bomb.m_fDamege;
 
-			//주인공 사망
-//			transform.parent.gameObject.AddComponent<GameOverScript> ();
+			if (m_fEnergy <= 0.0f)
+			{
+				m_fEnergy = 0.0f;
+				setState (STATE.NOCKDOWN);
+				GameManager.Instance.changeState (GameManager.STATE.STATE_GAMEOVER);
+			}
 		}
 		else if (collider.tag == "Block")
 		{
 
 		}
+	}
+
+	public float getEnergy()
+	{
+		return m_fEnergy;
 	}
 
 	void setState (STATE state)

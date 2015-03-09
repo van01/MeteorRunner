@@ -2,7 +2,7 @@
 using System.Collections;
 
 public class UIPlayerControl : MonoBehaviour {
-	
+
 	public Texture2D m_imgRun 	= null;
 	public Texture2D m_imgSkill = null;
 	public Texture2D m_imgStart = null;
@@ -52,6 +52,9 @@ public class UIPlayerControl : MonoBehaviour {
 			{
 				m_player.skill(0);
 			}
+
+			GUI.Label ( new Rect (Screen.width/2 - 50, Screen.height-30, 100, 20), "Energy : "+m_player.getEnergy());
+
 			break;
 		}
 	}
