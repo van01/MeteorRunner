@@ -1,27 +1,6 @@
 fileFormatVersion: 2
 guid: 7dae8dd50d28f4fefbba1b7b41c0b143
 TextureImporter:
-  fileIDToRecycleName:
-    21300000: 33605_0
-    21300002: 33605_1
-    21300004: 33605_2
-    21300006: 33605_3
-    21300008: 33605_4
-    21300010: 33605_5
-    21300012: 33605_6
-    21300014: 33605_7
-    21300016: 33605_8
-    21300018: 33605_9
-    21300020: 33605_10
-    21300022: 33605_11
-    21300024: 33605_12
-    21300026: 33605_13
-    21300028: 33605_14
-    21300030: 33605_15
-    21300032: 33605_16
-    21300034: 33605_17
-    21300036: 33605_18
-    21300038: 33605_19
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -262,6 +241,66 @@ TextureImporter:
         height: 24
       alignment: 7
       pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: player_backstep01
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 437
+        width: 40
+        height: 58
+      alignment: 9
+      pivot: {x: .524999976, y: .0258615427}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: player_backstep02
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 437
+        width: 41
+        height: 61
+      alignment: 9
+      pivot: {x: .548780501, y: .0245896634}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: player_backstep03
+      rect:
+        serializedVersion: 2
+        x: 113
+        y: 437
+        width: 50
+        height: 47
+      alignment: 9
+      pivot: {x: .507999897, y: .03320897}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: player_backstep04
+      rect:
+        serializedVersion: 2
+        x: 171
+        y: 437
+        width: 46
+        height: 46
+      alignment: 9
+      pivot: {x: .402173907, y: .0347820781}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: player_backstep05
+      rect:
+        serializedVersion: 2
+        x: 226
+        y: 437
+        width: 45
+        height: 45
+      alignment: 9
+      pivot: {x: .428888947, y: .0355550125}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: player_backstep06
+      rect:
+        serializedVersion: 2
+        x: 282
+        y: 437
+        width: 43
+        height: 49
+      alignment: 9
+      pivot: {x: .40697673, y: .0306116212}
       border: {x: 0, y: 0, z: 0, w: 0}
   spritePackingTag: 
   userData: 

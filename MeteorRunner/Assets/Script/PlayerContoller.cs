@@ -3,12 +3,27 @@ using System.Collections;
 
 public class PlayerContoller : MonoBehaviour {
 
-	public	bool m_isPlayerMove = false;
-	public	float m_PlayerSpeed = 1.5f;
+	public enum STATE
+	{
+		STOP		= 0,
+		RUN			= 1,
+		BACKSTEP	= 2,
+		NOCKDOWN	= 3,
+		DEAD		= 4,
+	}
+
+	private STATE 		m_nState = STATE.STOP;
+
+	//sub state
+	private bool		m_isBackStepMove = false;
+
+	public float 		m_PlayerSpeed 		= 1.5f;
+	public float		m_BackStepSpeed 	= -20.0f;
 	private	Animator	m_anim;
-	public bool m_isAlive	= true;
-	private Vector3 m_vtLastPosition;
-	private Vector3 m_vtMaxMove;
+	private Vector3 	m_vtLastPosition;
+	private Vector3 	m_vtMaxMove;
+	private bool		m_isPressedRun = false;
+
 
 	// Use this for initialization
 	void Start () {
@@ -19,49 +34,31 @@ public class PlayerContoller : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 
-		if (!m_isAlive || !GameManager.Instance.isIngame())
+		if (!GameManager.Instance.isIngame())
 			return;
 
-//		if (!Input.GetButton("Fire1"))
-		if (!m_isPlayerMove)
+
+		switch (m_nState)
 		{
-			m_anim.SetBool("isRun", false);
-			return;
-		}
-		m_anim.SetBool("isRun", true);
-
-
-		m_vtLastPosition = this.transform.position;
-		float fScore = m_PlayerSpeed * Time.deltaTime;
-		m_vtLastPosition.x += fScore;
-
-		if (m_vtLastPosition.x > m_vtMaxMove.x)
-		{
-			m_vtLastPosition.x = m_vtMaxMove.x;
-			fScore -= (m_vtLastPosition.x-m_vtMaxMove.x);
+		case STATE.RUN:
+			calcRunPosition();
+			break;
+		case STATE.BACKSTEP:
+			calcBackStepPosition();
+			break;
 		}
 
-		GameManager.Instance.addScore (fScore);
-
-		this.transform.position = m_vtLastPosition;
-	}
-
-	public void setMove(bool isMove) {
-		m_isPlayerMove = isMove;
-	}
-
-	//주인공 사망 시 게임오버 스크립트 호출 (재시도, 나가기)
-	void OnDestroy()
-	{
 
 	}
+
+
 
 	void OnTriggerEnter2D (Collider2D collider)
 	{
 		if (collider.tag == "Bomb")
 		{
-			m_isAlive = false;
-			m_anim.SetBool("isAlive", false);
+			setState (STATE.NOCKDOWN);
+
 			GameManager.Instance.changeState (GameManager.STATE.STATE_GAMEOVER);
 
 			//주인공 사망
@@ -72,4 +69,113 @@ public class PlayerContoller : MonoBehaviour {
 
 		}
 	}
+
+	void setState (STATE state)
+	{
+		switch (m_nState)
+		{
+		case STATE.STOP:
+			if (m_nState != STATE.NOCKDOWN)
+				m_nState = state;
+			break;
+		case STATE.RUN:
+			if (m_nState != STATE.NOCKDOWN)
+				m_nState = state;
+			break;
+		case STATE.BACKSTEP:
+			if (m_nState != STATE.NOCKDOWN)
+				m_nState = state;
+			break;
+		case STATE.NOCKDOWN:
+			break;
+		}
+		m_nState = state;
+
+		m_anim.SetInteger ("STATE", (int)m_nState);
+
+	}
+
+	/****************************************************
+	 * position calcuration
+	 ****************************************************/
+	float calcPosition (float fSpeed)
+	{
+		m_vtLastPosition = this.transform.position;
+		float fScore = fSpeed * Time.deltaTime;
+		m_vtLastPosition.x += fScore;
+		
+		if (m_vtLastPosition.x > m_vtMaxMove.x)
+		{
+			m_vtLastPosition.x = m_vtMaxMove.x;
+			fScore -= (m_vtLastPosition.x-m_vtMaxMove.x);
+		}
+
+		this.transform.position = m_vtLastPosition;
+
+		return fScore;
+	}
+
+	void calcRunPosition()
+	{
+		float fScore = calcPosition (m_PlayerSpeed);
+		
+		GameManager.Instance.addScore (fScore);
+		
+	}
+
+	void calcBackStepPosition()
+	{
+		if (m_isBackStepMove)
+			calcPosition (m_BackStepSpeed);
+	}
+
+	/****************************************************
+	 * animation event
+	 ****************************************************/
+	public void BackStep_StartMove()
+	{
+		m_isBackStepMove = true;
+	}
+	public void BackStep_AniEnd()
+	{
+		if (m_isPressedRun)
+		{
+			setState (STATE.RUN);
+		}
+		else
+		{
+			setState (STATE.STOP);
+		}
+
+		m_isBackStepMove = false;
+	}
+
+	/****************************************************
+	 * Player Control Function
+	 ****************************************************/
+
+	public void setMove(bool isMove) {
+
+		m_isPressedRun = isMove;
+		if (m_nState == STATE.BACKSTEP)
+			return;
+		
+		if (isMove)
+		{
+			setState (STATE.RUN);
+		}
+		else
+		{
+			setState (STATE.STOP);
+		}
+		m_anim.SetInteger("STATE", (int)m_nState);
+	}
+
+	public void skill (int nSkil)
+	{
+		setState (STATE.BACKSTEP);
+
+		m_anim.SetInteger("STATE", (int)m_nState);
+	}
+
 }

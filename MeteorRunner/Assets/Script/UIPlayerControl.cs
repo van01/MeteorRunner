@@ -45,12 +45,12 @@ public class UIPlayerControl : MonoBehaviour {
 			else
 			{
 				Debug.Log ("Run on");
-				m_player.setMove(false);
+				//m_player.setMove(false);
 			}
 
 			if (GUI.Button ( new Rect(Screen.width-65, Screen.height-65 , 50, 50), m_imgSkill))
 			{
-
+				m_player.skill(0);
 			}
 			break;
 		}
