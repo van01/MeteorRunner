@@ -55,7 +55,7 @@ public class PlayerContoller : MonoBehaviour {
 
 	void OnTriggerEnter2D (Collider2D collider)
 	{
-		if (collider.tag == "Bomb")
+		if (collider.tag == "Bomb" && m_nState != STATE.BACKSTEP)
 		{
 			setState (STATE.NOCKDOWN);
 
