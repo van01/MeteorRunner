@@ -72,7 +72,9 @@ public class PlayerContoller : MonoBehaviour {
 
 	void setState (STATE state)
 	{
-		switch (m_nState)
+		Debug.Log ("STATE Start: " + state +" -> " + m_nState);
+
+		switch (state)
 		{
 		case STATE.STOP:
 			if (m_nState != STATE.NOCKDOWN)
@@ -87,12 +89,13 @@ public class PlayerContoller : MonoBehaviour {
 				m_nState = state;
 			break;
 		case STATE.NOCKDOWN:
+			m_nState = state;
 			break;
 		}
-		m_nState = state;
 
 		m_anim.SetInteger ("STATE", (int)m_nState);
 
+		Debug.Log ("STATE End : " + m_nState);
 	}
 
 	/****************************************************
