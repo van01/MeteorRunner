@@ -3,7 +3,7 @@ using System.Collections;
 
 public class PlayerContoller : MonoBehaviour {
 
-	public	bool m_isMouseDown = false;
+	public	bool m_isPlayerMove = false;
 	public	float m_PlayerSpeed = 1.5f;
 	private	Animator	m_anim;
 	public bool m_isAlive	= true;
@@ -22,7 +22,8 @@ public class PlayerContoller : MonoBehaviour {
 		if (!m_isAlive || !GameManager.Instance.isIngame())
 			return;
 
-		if (!Input.GetButton("Fire1"))
+//		if (!Input.GetButton("Fire1"))
+		if (!m_isPlayerMove)
 		{
 			m_anim.SetBool("isRun", false);
 			return;
@@ -45,11 +46,8 @@ public class PlayerContoller : MonoBehaviour {
 		this.transform.position = m_vtLastPosition;
 	}
 
-	void OnMouseUp() {
-		m_isMouseDown = false;
-	}
-	void OnMouseDown() {
-		m_isMouseDown = true;
+	public void setMove(bool isMove) {
+		m_isPlayerMove = isMove;
 	}
 
 	//주인공 사망 시 게임오버 스크립트 호출 (재시도, 나가기)
@@ -67,7 +65,7 @@ public class PlayerContoller : MonoBehaviour {
 			GameManager.Instance.changeState (GameManager.STATE.STATE_GAMEOVER);
 
 			//주인공 사망
-			transform.parent.gameObject.AddComponent<GameOverScript> ();
+//			transform.parent.gameObject.AddComponent<GameOverScript> ();
 		}
 		else if (collider.tag == "Block")
 		{

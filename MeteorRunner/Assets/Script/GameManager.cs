@@ -132,11 +132,6 @@ public class GameManager : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-	
-		if (Input.GetButton("Fire1"))
-		{
-			onClick();
-		}
 	}
 
 	public bool isIngame()
@@ -144,19 +139,9 @@ public class GameManager : MonoBehaviour {
 		return m_eState == STATE.STATE_GAME;
 	}
 
-	void onClick() {
-		switch (m_eState)
-		{
-		case STATE.STATE_NONE:
-			break;
-		case STATE.STATE_READY:
-			changeState (STATE.STATE_GAME);
-			break;
-		case STATE.STATE_GAME:
-			break;
-		case STATE.STATE_GAMEOVER:
-			break;
-		}
+	public void start()
+	{
+		changeState (STATE.STATE_GAME);
 	}
 
 	void onReady() {

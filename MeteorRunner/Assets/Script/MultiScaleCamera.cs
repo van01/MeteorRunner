@@ -79,5 +79,6 @@ public class MultiScaleCamera : MonoBehaviour
 		}
 		
 		Camera.main.orthographicSize = targetOrthographicSize;
+
 	}
 }
