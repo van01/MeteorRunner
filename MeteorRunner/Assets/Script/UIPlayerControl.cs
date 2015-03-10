@@ -39,12 +39,10 @@ public class UIPlayerControl : MonoBehaviour {
 		case GameManager.STATE.STATE_GAME:
 			if (GUI.RepeatButton ( new Rect(15, Screen.height-65 , 50, 50), m_imgRun))
 			{
-				Debug.Log ("Run on");
 				m_player.setMove(true);
 			}
 			else
 			{
-				Debug.Log ("Run on");
 				//m_player.setMove(false);
 			}
 
