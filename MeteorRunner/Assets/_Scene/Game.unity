@@ -291,8 +291,8 @@ BoxCollider2D:
   m_Enabled: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Size: {x: 1, y: 1}
-  m_Center: {x: -.300000012, y: 0}
+  m_Size: {x: 6.44000006, y: 1.35000002}
+  m_Center: {x: -2.94000006, y: 0}
 --- !u!4 &507587529
 Transform:
   m_ObjectHideFlags: 0
@@ -300,7 +300,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 507587527}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -10.1899996, y: -1.82385683, z: 10}
+  m_LocalPosition: {x: -9.52000046, y: -1.82385683, z: 10}
   m_LocalScale: {x: 1, y: 3.43000007, z: 1}
   m_Children: []
   m_Father: {fileID: 1956701299}
@@ -927,6 +927,67 @@ MonoBehaviour:
   m_imgStart: {fileID: 2800000, guid: 3edefb7c2b73142cdb021b1b55587baa, type: 3}
   m_imgConfirm: {fileID: 2800000, guid: 33783a0fa63254d8480d7913cffc80ae, type: 3}
   m_player: {fileID: 163023989}
+  m_progressBarEmpty: {fileID: 2800000, guid: 7af3c8672f1bb4847b3553172cf8f197, type: 3}
+  m_progressBarFull: {fileID: 2800000, guid: 07422be3333dc4bfcb11d64cf144606c, type: 3}
+  style:
+    m_Name: 
+    m_Normal:
+      m_Background: {fileID: 0}
+      m_TextColor: {r: 0, g: 0, b: 0, a: 1}
+    m_Hover:
+      m_Background: {fileID: 0}
+      m_TextColor: {r: 0, g: 0, b: 0, a: 1}
+    m_Active:
+      m_Background: {fileID: 0}
+      m_TextColor: {r: 0, g: 0, b: 0, a: 1}
+    m_Focused:
+      m_Background: {fileID: 0}
+      m_TextColor: {r: 0, g: 0, b: 0, a: 1}
+    m_OnNormal:
+      m_Background: {fileID: 0}
+      m_TextColor: {r: 0, g: 0, b: 0, a: 1}
+    m_OnHover:
+      m_Background: {fileID: 0}
+      m_TextColor: {r: 0, g: 0, b: 0, a: 1}
+    m_OnActive:
+      m_Background: {fileID: 0}
+      m_TextColor: {r: 0, g: 0, b: 0, a: 1}
+    m_OnFocused:
+      m_Background: {fileID: 0}
+      m_TextColor: {r: 0, g: 0, b: 0, a: 1}
+    m_Border:
+      m_Left: 0
+      m_Right: 0
+      m_Top: 0
+      m_Bottom: 0
+    m_Margin:
+      m_Left: 0
+      m_Right: 0
+      m_Top: 0
+      m_Bottom: 0
+    m_Padding:
+      m_Left: 0
+      m_Right: 0
+      m_Top: 0
+      m_Bottom: 0
+    m_Overflow:
+      m_Left: 0
+      m_Right: 0
+      m_Top: 0
+      m_Bottom: 0
+    m_Font: {fileID: 0}
+    m_FontSize: 0
+    m_FontStyle: 0
+    m_Alignment: 0
+    m_WordWrap: 0
+    m_RichText: 1
+    m_TextClipping: 0
+    m_ImagePosition: 0
+    m_ContentOffset: {x: 0, y: 0}
+    m_FixedWidth: 0
+    m_FixedHeight: 0
+    m_StretchWidth: 1
+    m_StretchHeight: 0
 --- !u!1 &1366044499
 GameObject:
   m_ObjectHideFlags: 0

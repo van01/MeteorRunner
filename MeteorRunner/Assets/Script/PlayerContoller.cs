@@ -37,7 +37,11 @@ public class PlayerContoller : MonoBehaviour {
 	private Vector3 	m_vtLastPosition;
 	private Vector3 	m_vtMaxMove;
 	private bool		m_isPressedRun = false;
-	private float		m_fEnergy			= MAX_ENERGY;
+	private float		m_fEnergy		 	= MAX_ENERGY;
+	private float		m_fMaxEnergy		= MAX_ENERGY;
+
+	public float		m_fRecoveryDelay	= 1.0f;
+	private float		m_fRecoveryTime		= 0.0f;
 
 
 	// Use this for initialization
@@ -48,6 +52,22 @@ public class PlayerContoller : MonoBehaviour {
 //		m_MaterialWhite = Resources.Load<Material> ("Font Material") as Material;
 
 		m_vtMaxMove = GameObject.FindGameObjectWithTag ("Block").transform.position;
+	}
+
+	void recoveryEnergy()
+	{
+		m_fRecoveryTime += Time.deltaTime;
+
+		if (m_fRecoveryTime > m_fRecoveryDelay)
+		{
+			m_fRecoveryTime = 0;
+
+			m_fEnergy+=1.0f;
+			if (m_fEnergy > m_fMaxEnergy)
+			{
+				m_fEnergy = m_fMaxEnergy;
+			}
+		}
 	}
 
 	/****************************************************
@@ -65,6 +85,7 @@ public class PlayerContoller : MonoBehaviour {
 		{
 		case STATE.RUN:
 			calcRunPosition();
+			recoveryEnergy();
 			updateRun();
 			break;
 		case STATE.BACKSTEP:
@@ -164,6 +185,11 @@ public class PlayerContoller : MonoBehaviour {
 	public float getEnergy()
 	{
 		return m_fEnergy;
+	}
+
+	public float getEnergyPercent()
+	{
+		return m_fEnergy / m_fMaxEnergy;
 	}
 
 	void setState (STATE state)
