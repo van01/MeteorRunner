@@ -37,7 +37,7 @@ public class UIPlayerControl : MonoBehaviour {
 
 			break;
 		case GameManager.STATE.STATE_GAME:
-			if (GUI.RepeatButton ( new Rect(15, Screen.height-65 , 50, 50), m_imgRun))
+			if (GUI.RepeatButton ( new Rect(Screen.width-65, Screen.height-65 , 50, 50), m_imgRun))
 			{
 				m_player.setMove(true);
 			}
@@ -46,7 +46,7 @@ public class UIPlayerControl : MonoBehaviour {
 				//m_player.setMove(false);
 			}
 
-			if (GUI.Button ( new Rect(Screen.width-65, Screen.height-65 , 50, 50), m_imgSkill))
+			if (GUI.Button ( new Rect(15, Screen.height-65 , 50, 50), m_imgSkill))
 			{
 				m_player.skill(0);
 			}

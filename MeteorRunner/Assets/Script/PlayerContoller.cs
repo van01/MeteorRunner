@@ -122,21 +122,37 @@ public class PlayerContoller : MonoBehaviour {
 
 	void OnTriggerEnter2D (Collider2D collider)
 	{
-		if (collider.tag == "Bomb" && m_nState != STATE.BACKSTEP && m_nSubState != SUBSTATE.CRASH)
+		if (collider.tag == "Bomb")
 		{
 			BombObject bomb = collider.GetComponent<BombObject>();
+			bool isCheck = false;
 
-			m_fEnergy -= bomb.m_fDamege;
-
-			if (m_fEnergy <= 0.0f)
+			if (m_nState != STATE.BACKSTEP && m_nSubState != SUBSTATE.CRASH)
 			{
-				m_fEnergy = 0.0f;
-				setState (STATE.NOCKDOWN);
-				GameManager.Instance.changeState (GameManager.STATE.STATE_GAMEOVER);
+				isCheck = true;
 			}
-			else
+			else if (bomb==null)
 			{
-				setSubState (SUBSTATE.CRASH);
+				isCheck = true;
+			}
+
+			if (isCheck)
+			{
+				if (bomb == null)
+					m_fEnergy = 0;
+				else
+					m_fEnergy -= bomb.m_fDamege;
+
+				if (m_fEnergy <= 0.0f)
+				{
+					m_fEnergy = 0.0f;
+					setState (STATE.NOCKDOWN);
+					GameManager.Instance.changeState (GameManager.STATE.STATE_GAMEOVER);
+				}
+				else
+				{
+					setSubState (SUBSTATE.CRASH);
+				}
 			}
 		}
 		else if (collider.tag == "Block")
