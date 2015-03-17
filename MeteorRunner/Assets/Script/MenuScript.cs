@@ -25,11 +25,11 @@ public class MenuScript : MonoBehaviour
 		if (GUI.Button(
 			// Center in X, 2/3 of the height in Y
 			new Rect(Screen.width / 2 - (buttonWidth / 2), (Screen.height - Screen.height / 4) - (buttonHeight / 2), buttonWidth, buttonHeight),
-			"게임 시작"
+			"START"
 			))
 		{
 			// On Click, load the first level.
-			Application.LoadLevel("Character"); // "Stage1" is the scene name
+			Application.LoadLevel("Game"); // "Stage1" is the scene name
 		}
 	}
 }

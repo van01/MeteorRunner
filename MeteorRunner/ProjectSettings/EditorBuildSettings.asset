@@ -7,7 +7,3 @@ EditorBuildSettings:
   m_Scenes:
   - enabled: 1
     path: Assets/_Scene/Game.unity
-  - enabled: 1
-    path: Assets/_Scene/Character.unity
-  - enabled: 1
-    path: Assets/_Scene/Title.unity
