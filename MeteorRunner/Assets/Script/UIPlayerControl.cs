@@ -12,9 +12,11 @@ public class UIPlayerControl : MonoBehaviour {
 	public Texture2D m_progressBarEmpty = null;
 	public Texture2D m_progressBarFull = null;
 
+	GUIStyle m_progressStyle = null;
+
 	void OnStart()
 	{
-	
+
 	}
 
 	// Use this for initialization
@@ -72,7 +74,6 @@ public class UIPlayerControl : MonoBehaviour {
 
 	}
 
-	public GUIStyle m_progressStyle;
 	void drawProgress(float fPercent, float text)
 	{
 		Vector2 pos, size;
@@ -81,6 +82,11 @@ public class UIPlayerControl : MonoBehaviour {
 		pos.y = Screen.height - 25;
 		size.x = 100.0f;
 		size.y = 25.0f;
+
+		if (m_progressStyle == null) 
+		{
+			m_progressStyle = new GUIStyle ();
+		}
 
 		m_progressStyle.alignment = TextAnchor.MiddleCenter;
 		m_progressStyle.normal.background = m_progressBarEmpty;
