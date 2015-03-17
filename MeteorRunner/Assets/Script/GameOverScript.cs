@@ -36,12 +36,12 @@ public class GameOverScript : MonoBehaviour
 			buttonWidth,
 			buttonHeight
 			),
-			"Back to title"
+			"Back to Menu"
 			)
 			)
 		{
 			// Reload the level
-			Application.LoadLevel("Title");
+			Application.LoadLevel("Character");
 		}
 	}
 }

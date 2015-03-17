@@ -3,7 +3,7 @@
 /// <summary>
 /// Title screen script
 /// </summary>
-public class MenuScript : MonoBehaviour
+public class SelectScript : MonoBehaviour
 {
 	private GUISkin skin;
 	
@@ -15,8 +15,8 @@ public class MenuScript : MonoBehaviour
 	
 	void OnGUI()
 	{
-		const int buttonWidth = 128;
-		const int buttonHeight = 60;
+		const int buttonWidth = 260;
+		const int buttonHeight = 80;
 		
 		// Set the skin to use
 		GUI.skin = skin;
@@ -24,12 +24,12 @@ public class MenuScript : MonoBehaviour
 		// Draw a button to start the game
 		if (GUI.Button(
 			// Center in X, 2/3 of the height in Y
-			new Rect(Screen.width / 2 - (buttonWidth / 2), (Screen.height - Screen.height / 4) - (buttonHeight / 2), buttonWidth, buttonHeight),
-			"게임 시작"
+			new Rect(Screen.width - buttonWidth - 30, Screen.height - buttonHeight - 30, buttonWidth, buttonHeight),
+			"준비 완료"
 			))
 		{
 			// On Click, load the first level.
-			Application.LoadLevel("Character"); // "Stage1" is the scene name
+			Application.LoadLevel("Game"); // "Stage1" is the scene name
 		}
 	}
 }

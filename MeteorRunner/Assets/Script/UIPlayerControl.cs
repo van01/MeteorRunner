@@ -8,6 +8,7 @@ public class UIPlayerControl : MonoBehaviour {
 	public Texture2D m_imgStart = null;
 	public Texture2D m_imgConfirm = null;
 	public PlayerContoller  m_player	= null;
+
 	public Texture2D m_progressBarEmpty = null;
 	public Texture2D m_progressBarFull = null;
 
@@ -33,7 +34,7 @@ public class UIPlayerControl : MonoBehaviour {
 			if (GUI.RepeatButton ( new Rect(Screen.width/2 - 50, Screen.height-100 , 100, 50), m_imgConfirm))
 			{
 				Debug.Log ("Run on");
-				Application.LoadLevel("Game");
+				Application.LoadLevel("Character");
 				GameManager.Instance.start();
 			}
 
