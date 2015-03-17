@@ -1,13 +1,11 @@
 fileFormatVersion: 2
-guid: d899ba80c55664877930f639de0f7a17
+guid: b9da980cc2cc6dd419b69395001e14fb
 TextureImporter:
-  fileIDToRecycleName:
-    21300000: text_ready
-    21300002: text_gameover
+  fileIDToRecycleName: {}
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
-    enableMipMap: 0
+    enableMipMap: 1
     linearTexture: 0
     correctGamma: 0
     fadeOut: 0
@@ -27,13 +25,13 @@ TextureImporter:
   maxTextureSize: 1024
   textureSettings:
     filterMode: -1
-    aniso: 1
+    aniso: 16
     mipBias: -1
     wrapMode: 1
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 2
+  spriteMode: 1
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -44,26 +42,6 @@ TextureImporter:
   textureType: 8
   buildTargetSettings: []
   spriteSheet:
-    sprites:
-    - name: text_ready
-      rect:
-        serializedVersion: 2
-        x: 5
-        y: 5
-        width: 191
-        height: 58
-      alignment: 0
-      pivot: {x: .5, y: .5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: text_gameover
-      rect:
-        serializedVersion: 2
-        x: 206
-        y: 13
-        width: 197
-        height: 50
-      alignment: 0
-      pivot: {x: .5, y: .5}
-      border: {x: 0, y: 0, z: 0, w: 0}
+    sprites: []
   spritePackingTag: 
   userData: 
