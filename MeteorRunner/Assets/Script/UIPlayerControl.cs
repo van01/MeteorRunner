@@ -8,7 +8,6 @@ public class UIPlayerControl : MonoBehaviour {
 	public Texture2D m_imgStart = null;
 	public Texture2D m_imgConfirm = null;
 	public PlayerContoller  m_player	= null;
-
 	public Texture2D m_progressBarEmpty = null;
 	public Texture2D m_progressBarFull = null;
 
