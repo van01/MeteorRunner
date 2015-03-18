@@ -7,8 +7,9 @@ TagManager:
   - Bomb
   - UI
   - LabelState
-  - 
-  - 
+  - UI_INGAME
+  - UI_GAMEOVER
+  - UI_GAMEREADY
   - 
   Builtin Layer 0: Default
   Builtin Layer 1: TransparentFX

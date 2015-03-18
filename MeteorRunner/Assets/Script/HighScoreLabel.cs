@@ -1,14 +1,15 @@
 ﻿using UnityEngine;
+using UnityEngine.UI;
 using System.Collections;
 
 public class HighScoreLabel : MonoBehaviour {
 
 	private string 				m_FrontText = "High : ";
-	private GUIText 			m_GuiScore;
+	private Text 				m_GuiScore;
 
 	// Use this for initialization
 	void Start () {
-		m_GuiScore = GetComponent<GUIText> ();
+		m_GuiScore = GetComponent<Text> ();
 	}
 	
 	// Update is called once per frame

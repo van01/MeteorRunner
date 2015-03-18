@@ -11,9 +11,12 @@ public class GameManager : MonoBehaviour {
 		STATE_GAMEOVER,
 	}
 
-	public Sprite		m_spGameOver;
-	public Sprite		m_spReady;
-	
+	public Sprite				m_spGameOver;
+	public Sprite				m_spReady;
+	public GameObject 			m_playerObject = null;
+	private PlayerContoller		m_player = null;
+
+
 	static string HIGHSCORE = "HighScore";
 
 	private static GameObject container;  
@@ -23,6 +26,10 @@ public class GameManager : MonoBehaviour {
 	private float 				m_fScore 		= 0.0f;
 	private float				m_fHighScore 	= 0.0f;
 	private STATE				m_eState		= STATE.STATE_NONE;
+
+	private GameObject 			m_UIInGame;
+	private GameObject			m_UIGameOver;
+	private GameObject			m_UIGameReady;
 
 	public static GameManager Instance 
 	{
@@ -34,12 +41,13 @@ public class GameManager : MonoBehaviour {
 //				container.name = "GameManager";  
 //				m_instance = container.AddComponent(typeof(GameManager)) as GameManager;  
 				m_instance = GameObject.FindObjectOfType (typeof(GameManager)) as GameManager;
-
 			}
 
 			return m_instance;
 		}
 	}
+
+	//-------------------------------------------------------------------------------------
 
 	public void changeState (STATE eState )
 	{
@@ -48,25 +56,26 @@ public class GameManager : MonoBehaviour {
 		case STATE.STATE_NONE:
 			break;
 		case STATE.STATE_READY:
-			m_fGameSpeed = 0.0f;
 			onReady();
 			break;
 		case STATE.STATE_GAME:
 			onGameStart();
-			m_fGameSpeed = 1.0f;
 			break;
 		case STATE.STATE_GAMEOVER:
 			onGameOver();
-			m_fGameSpeed = 0.0f;
 			break;
 		}
 		m_eState = eState;
 	}
 
+	//-------------------------------------------------------------------------------------
+
 	public STATE getState()
 	{
 		return m_eState;
 	}
+
+	//-------------------------------------------------------------------------------------
 
 	public bool isGameOver
 	{
@@ -93,6 +102,8 @@ public class GameManager : MonoBehaviour {
 		}
 	}
 
+	//-------------------------------------------------------------------------------------
+
 	public float fGameSpeed
 	{
 		get
@@ -106,73 +117,118 @@ public class GameManager : MonoBehaviour {
 		}
 	}
 
+	//-------------------------------------------------------------------------------------
+
 	public void addScore (float fAddScore)
 	{
 		m_fScore += (fAddScore/2);
 	}
+
+	//-------------------------------------------------------------------------------------
+
 	public float getScore()
 	{
 		return m_fScore;
 	}
+
+	//-------------------------------------------------------------------------------------
 
 	public float getHighScore()
 	{
 		return m_fHighScore;
 	}
 
+	//-------------------------------------------------------------------------------------
+
 	// Use this for initialization
 	void Start () {
 
 		Screen.orientation = ScreenOrientation.Landscape;
-
 		m_fHighScore = PlayerPrefs.GetFloat (HIGHSCORE, 0);
+
+		m_player = m_playerObject.GetComponent<PlayerContoller>();
+		m_UIInGame 		= GameObject.FindGameObjectWithTag ("UI_INGAME");
+		m_UIGameOver 	= GameObject.FindGameObjectWithTag ("UI_GAMEOVER");
+		m_UIGameReady	= GameObject.FindGameObjectWithTag ("UI_GAMEREADY");
+
+
 
 		changeState (GameManager.STATE.STATE_READY);
 	}
-	
+
+	//-------------------------------------------------------------------------------------
+
 	// Update is called once per frame
 	void Update () {
 	}
+
+	//-------------------------------------------------------------------------------------
 
 	public bool isIngame()
 	{
 		return m_eState == STATE.STATE_GAME;
 	}
 
-	public void start()
-	{
-		changeState (STATE.STATE_GAME);
-	}
+	//-------------------------------------------------------------------------------------
+
+	//-------------------------------------------------------------------------------------
 
 	void onReady() {
-		setLabel (m_spReady);
+		m_fGameSpeed = 0.0f;
+
+		m_UIInGame.SetActive (false);
+		m_UIGameReady.SetActive (true);
+		m_UIGameOver.SetActive (false);
 	}
+
+	//-------------------------------------------------------------------------------------
 
 	void onGameStart()
 	{
-		setLabel (null);
+		m_fGameSpeed = 1.0f;
+
+		m_UIInGame.SetActive (true);
+		m_UIGameReady.SetActive (false);
+		m_UIGameOver.SetActive (false);
 	}
+
+	//-------------------------------------------------------------------------------------
 
 	void onGameOver()
 	{
-		setLabel (m_spGameOver);
-		GameManager.Instance.isGameOver = true;
+		m_fGameSpeed = 0.0f;
+		//GameManager.Instance.isGameOver = true;
+		isGameOver = true;
+
+		m_UIInGame.SetActive (false);
+		m_UIGameReady.SetActive (false);
+		m_UIGameOver.SetActive (true);
+
 	}
 
-	void setLabel (Sprite pSprite)
+	//-------------------------------------------------------------------------------------
+
+	public void onPlayerRun (bool isRun)
 	{
-		GameObject label = GameObject.FindGameObjectWithTag ("LabelState");
-		SpriteRenderer render = label.GetComponent<SpriteRenderer>();
-
-		if (pSprite)
+		if (m_eState == STATE.STATE_GAME)
 		{
-			render.enabled = true;
-			render.sprite = pSprite;
+			m_player.setMove (isRun);
 		}
-		else
-		{
-			render.enabled = false;
-		}
-
 	}
+
+	//-------------------------------------------------------------------------------------
+
+	public GameObject getPlayerObject()
+	{
+		return m_playerObject;
+	}
+
+	//-------------------------------------------------------------------------------------
+
+	public PlayerContoller getPlayerController()
+	{
+		return m_player;
+	}
+
+	//-------------------------------------------------------------------------------------
 }

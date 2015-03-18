@@ -3,20 +3,18 @@ using System.Collections;
 
 public class UIPlayerControl : MonoBehaviour {
 
-	public Texture2D m_imgRun 	= null;
-	public Texture2D m_imgSkill = null;
 	public Texture2D m_imgStart = null;
 	public Texture2D m_imgConfirm = null;
-	public PlayerContoller  m_player	= null;
+	private PlayerContoller m_player = null;
 
 	public Texture2D m_progressBarEmpty = null;
 	public Texture2D m_progressBarFull = null;
 
 	GUIStyle m_progressStyle = null;
 
-	void OnStart()
+	void Start()
 	{
-
+		m_player = GameManager.Instance.getPlayerController ();
 	}
 
 	// Use this for initialization
@@ -25,21 +23,24 @@ public class UIPlayerControl : MonoBehaviour {
 		switch (GameManager.Instance.getState ())
 		{
 		case GameManager.STATE.STATE_READY:
+			/*
 			if (GUI.RepeatButton ( new Rect(Screen.width/2 - 50, Screen.height-100 , 100, 50), m_imgStart))
 			{
 				GameManager.Instance.start();
+				GameManager.Instance.changeState (GameManager.STATE.STATE_GAME);
 			}
+			*/
 			break;
 
 		case GameManager.STATE.STATE_GAMEOVER:
-
+			/*
 			if (GUI.RepeatButton ( new Rect(Screen.width/2 - 50, Screen.height-100 , 100, 50), m_imgConfirm))
 			{
 				Debug.Log ("Run on");
 				Application.LoadLevel("Character");
 				GameManager.Instance.start();
 			}
-
+*/
 			float barDisplay = m_player.getEnergy()/100.0f;
 			float fEnergyPercent = m_player.getEnergyPercent();
 			drawProgress (fEnergyPercent, barDisplay);
@@ -50,28 +51,13 @@ public class UIPlayerControl : MonoBehaviour {
 			break;
 		}
 	}
+	
 		
 	void onGUI_Game()
 	{
-		if (GUI.RepeatButton ( new Rect(Screen.width-65, Screen.height-65 , 50, 50), m_imgRun))
-		{
-			m_player.setMove(true);
-		}
-		else
-		{
-			//m_player.setMove(false);
-		}
-		
-		if (GUI.Button ( new Rect(15, Screen.height-65 , 50, 50), m_imgSkill))
-		{
-			m_player.skill(0);
-		}
-		
-
 		float barDisplay = m_player.getEnergy();
 		float fEnergyPercent = m_player.getEnergyPercent ();
 		drawProgress (fEnergyPercent, barDisplay);
-
 	}
 
 	void drawProgress(float fPercent, float text)
