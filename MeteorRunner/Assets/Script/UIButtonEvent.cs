@@ -20,6 +20,6 @@ public class UIButtonEvent : MonoBehaviour {
 
 	public void onGameReload()
 	{
-		Application.LoadLevel("Character");
+		Application.LoadLevel("Ready");
 	}
 }
