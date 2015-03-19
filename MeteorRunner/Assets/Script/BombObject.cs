@@ -16,13 +16,13 @@ public class BombObject : MonoBehaviour {
 		Animator anim = GetComponent<Animator> ();
 		anim.SetBool ("isExfired", true);
 
-		this.gameObject.rigidbody2D.isKinematic = true;
+		this.gameObject.GetComponent<Rigidbody2D>().isKinematic = true;
 		m_isFired = true;
 	}
 
 	public void disableCollider()
 	{
-		this.gameObject.collider2D.enabled = false;
+		this.gameObject.GetComponent<Collider2D>().enabled = false;
 	}
 
 	public void destroyBomb()
