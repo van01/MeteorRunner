@@ -14,7 +14,7 @@ PlayerSettings:
   companyName: DefaultCompany
   productName: runnhit2
   cloudProjectId: 
-  defaultCursor: {fileID: 2800000, guid: c48aa7ecc10cd46e9b73b701c54655d0, type: 3}
+  defaultCursor: {fileID: 0}
   cursorHotspot: {x: 0, y: 0}
   defaultScreenWidth: 1024
   defaultScreenHeight: 768
