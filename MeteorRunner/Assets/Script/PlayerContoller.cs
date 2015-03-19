@@ -194,7 +194,7 @@ public class PlayerContoller : MonoBehaviour {
 
 	void setState (STATE state)
 	{
-		Debug.Log ("STATE Start: " + state +" -> " + m_nState);
+		Debug.Log ("STATE Start: " + m_nState +" -> " + state);
 
 		STATE prevState = m_nState;
 		switch (state)
@@ -289,10 +289,14 @@ public class PlayerContoller : MonoBehaviour {
 	 ****************************************************/
 	public void BackStep_StartMove()
 	{
+		Debug.Log ("BackStep_StartMove : " + m_nState);
 		m_isBackStepMove = true;
 	}
+
 	public void BackStep_AniEnd()
 	{
+		Debug.Log ("BackStep_AniEnd : " + m_nState);
+
 		if (m_isPressedRun)
 		{
 			setState (STATE.RUN);
