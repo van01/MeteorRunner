@@ -27,9 +27,14 @@ public class GameManager : MonoBehaviour {
 	private float				m_fHighScore 	= 0.0f;
 	private STATE				m_eState		= STATE.STATE_NONE;
 
+	private float m_fMonsterCheckScore = 0.0f;
+	private float m_fMonsterDistance = -7;
+
+
 	private GameObject 			m_UIInGame;
 	private GameObject			m_UIGameOver;
 	private GameObject			m_UIGameReady;
+	private GameObject			m_Monster;
 
 	public static GameManager Instance 
 	{
@@ -150,7 +155,7 @@ public class GameManager : MonoBehaviour {
 		m_UIInGame 		= GameObject.FindGameObjectWithTag ("UI_INGAME");
 		m_UIGameOver 	= GameObject.FindGameObjectWithTag ("UI_GAMEOVER");
 		m_UIGameReady	= GameObject.FindGameObjectWithTag ("UI_GAMEREADY");
-
+		m_Monster 		= GameObject.FindGameObjectWithTag ("ENEMY_MONSTER");
 
 
 		changeState (GameManager.STATE.STATE_READY);
@@ -160,6 +165,12 @@ public class GameManager : MonoBehaviour {
 
 	// Update is called once per frame
 	void Update () {
+		if (m_fScore - m_fMonsterCheckScore > 30.0f)
+		{
+			m_fMonsterDistance += 0.5f;
+			m_fMonsterCheckScore = m_fScore;
+			m_Monster.GetComponent<MonsterMovement>().startAction (m_fMonsterDistance);
+		}
 	}
 
 	//-------------------------------------------------------------------------------------

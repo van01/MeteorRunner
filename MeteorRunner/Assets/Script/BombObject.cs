@@ -1,11 +1,10 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class BombObject : MonoBehaviour {
+public class BombObject : EnemyObject {
 
 	bool m_isFired = false;
 	public float m_fAddSpeed = 0.0f;
-	public float m_fDamege = 0.0f;
 
 	void Start()
 	{

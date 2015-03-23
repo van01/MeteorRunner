@@ -144,7 +144,7 @@ public class PlayerContoller : MonoBehaviour {
 	{
 		if (collider.tag == "Bomb")
 		{
-			BombObject bomb = collider.GetComponent<BombObject>();
+			EnemyObject bomb = collider.GetComponent<EnemyObject>();
 			bool isCheck = false;
 
 			if (m_nState != STATE.BACKSTEP && m_nSubState != SUBSTATE.CRASH)

@@ -19,7 +19,6 @@ public class MonsterMovement : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		m_orgPosition = transform.position;
-		start (10);
 	}
 	
 	// Update is called once per frame
@@ -69,11 +68,12 @@ public class MonsterMovement : MonoBehaviour {
 		m_state = state;
 	}
 
-	public void start(float distance)
+	//positionX : -7~0
+	public void startAction(float positionX)
 	{
 		if (m_state == STATE.WAIT)
 		{
-			m_fTargetX = m_orgPosition.x + distance;
+			m_fTargetX = positionX;
 			if (m_fTargetX > MAX_POSITION_X)
 			{
 				m_fTargetX = MAX_POSITION_X;
