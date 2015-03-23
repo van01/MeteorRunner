@@ -115,17 +115,16 @@ public class PlayerContoller : MonoBehaviour {
 			{
 				m_fFlickerTime += Time.deltaTime;
 
-				Debug.Log (m_fFlickerTime + ", " + FLICKER_PLAYER_DELAY);
 				if (m_fFlickerTime > FLICKER_PLAYER_DELAY)
 				{
 					if (m_isFlickerNormal)
 					{
-						Debug.Log ("White");
+//						Debug.Log ("White");
 						m_spRender.material = m_MaterialWhite;
 					}
 					else
 					{
-						Debug.Log ("normal");
+//						Debug.Log ("normal");
 						m_spRender.material = m_MaterialNormal;
 					}
 					m_isFlickerNormal = !m_isFlickerNormal;
