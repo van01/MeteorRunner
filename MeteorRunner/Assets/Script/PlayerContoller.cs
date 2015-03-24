@@ -142,7 +142,7 @@ public class PlayerContoller : MonoBehaviour {
 
 	void OnTriggerEnter2D (Collider2D collider)
 	{
-		if (collider.tag == "Bomb")
+		if (collider.tag == "Bomb" || collider.tag == "ENEMY_MONSTER")
 		{
 			EnemyObject bomb = collider.GetComponent<EnemyObject>();
 			bool isCheck = false;
