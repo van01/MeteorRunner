@@ -11,6 +11,11 @@ public class BombCreator : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
+
+		if (m_copySrc1 == null)
+			m_copySrc1 = m_copySrc2;
+		if (m_copySrc2 == null)
+			m_copySrc2 = m_copySrc1;
 	
 	}
 	
@@ -49,9 +54,12 @@ public class BombCreator : MonoBehaviour {
 			rigid = m_copySrc1;
 		}
 
-		Rigidbody2D cloneObject = (Rigidbody2D)Instantiate (rigid,
+		if (rigid)
+		{
+			Rigidbody2D cloneObject = (Rigidbody2D)Instantiate (rigid,
 		                     								pos,
 		                                                    rigid.transform.rotation);
-		cloneObject.transform.parent = m_parent;
+			cloneObject.transform.parent = m_parent;
+		}
 	}
 }
