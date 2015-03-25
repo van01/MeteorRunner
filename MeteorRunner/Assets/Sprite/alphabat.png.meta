@@ -1,5 +1,7 @@
 fileFormatVersion: 2
 guid: 4a30406b8f347403bab04484fc4cd8d1
+timeCreated: 1427188059
+licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
     21300000: alphabat_0
@@ -49,6 +51,7 @@ TextureImporter:
     21300088: alphabat_44
     21300090: alphabat_45
     21300092: alphabat_46
+    21300094: alphabat_GO
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -67,6 +70,9 @@ TextureImporter:
   isReadable: 0
   grayScaleToAlpha: 0
   generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 8
+  cubemapConvolutionExponent: 1.5
   seamlessCubemap: 0
   textureFormat: -1
   maxTextureSize: 1024
@@ -77,6 +83,7 @@ TextureImporter:
     wrapMode: 1
   nPOTScale: 0
   lightmap: 0
+  rGBM: 0
   compressionQuality: 50
   spriteMode: 2
   spriteExtrude: 1
@@ -112,7 +119,7 @@ TextureImporter:
         width: 32
         height: 32
       alignment: 1
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: alphabat_2
       rect:
@@ -122,7 +129,7 @@ TextureImporter:
         width: 32
         height: 32
       alignment: 1
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: alphabat_3
       rect:
@@ -132,7 +139,7 @@ TextureImporter:
         width: 32
         height: 32
       alignment: 1
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: alphabat_4
       rect:
@@ -142,7 +149,7 @@ TextureImporter:
         width: 32
         height: 32
       alignment: 1
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: alphabat_5
       rect:
@@ -152,7 +159,7 @@ TextureImporter:
         width: 32
         height: 32
       alignment: 1
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: alphabat_6
       rect:
@@ -162,7 +169,7 @@ TextureImporter:
         width: 32
         height: 32
       alignment: 1
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: alphabat_7
       rect:
@@ -172,7 +179,7 @@ TextureImporter:
         width: 32
         height: 32
       alignment: 1
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: alphabat_8
       rect:
@@ -182,7 +189,7 @@ TextureImporter:
         width: 16
         height: 32
       alignment: 1
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: alphabat_9
       rect:
@@ -192,7 +199,7 @@ TextureImporter:
         width: 32
         height: 32
       alignment: 1
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: alphabat_10
       rect:
@@ -202,7 +209,7 @@ TextureImporter:
         width: 32
         height: 32
       alignment: 1
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: alphabat_11
       rect:
@@ -212,7 +219,7 @@ TextureImporter:
         width: 32
         height: 32
       alignment: 1
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: alphabat_12
       rect:
@@ -222,7 +229,7 @@ TextureImporter:
         width: 32
         height: 32
       alignment: 1
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: alphabat_13
       rect:
@@ -232,7 +239,7 @@ TextureImporter:
         width: 32
         height: 32
       alignment: 1
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: alphabat_14
       rect:
@@ -242,7 +249,7 @@ TextureImporter:
         width: 32
         height: 32
       alignment: 1
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: alphabat_15
       rect:
@@ -252,7 +259,7 @@ TextureImporter:
         width: 32
         height: 32
       alignment: 1
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: alphabat_16
       rect:
@@ -262,7 +269,7 @@ TextureImporter:
         width: 32
         height: 32
       alignment: 1
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: alphabat_17
       rect:
@@ -272,7 +279,7 @@ TextureImporter:
         width: 32
         height: 32
       alignment: 1
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: alphabat_18
       rect:
@@ -282,7 +289,7 @@ TextureImporter:
         width: 32
         height: 32
       alignment: 1
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: alphabat_19
       rect:
@@ -292,7 +299,7 @@ TextureImporter:
         width: 32
         height: 32
       alignment: 1
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: alphabat_20
       rect:
@@ -302,7 +309,7 @@ TextureImporter:
         width: 32
         height: 32
       alignment: 1
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: alphabat_21
       rect:
@@ -312,7 +319,7 @@ TextureImporter:
         width: 32
         height: 32
       alignment: 1
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: alphabat_22
       rect:
@@ -322,7 +329,7 @@ TextureImporter:
         width: 32
         height: 32
       alignment: 1
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: alphabat_23
       rect:
@@ -332,7 +339,7 @@ TextureImporter:
         width: 32
         height: 32
       alignment: 1
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: alphabat_24
       rect:
@@ -342,7 +349,7 @@ TextureImporter:
         width: 32
         height: 32
       alignment: 1
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: alphabat_25
       rect:
@@ -352,37 +359,37 @@ TextureImporter:
         width: 32
         height: 32
       alignment: 1
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: alphabat_26
       rect:
         serializedVersion: 2
-        x: 3
-        y: 65
-        width: 16
-        height: 32
+        x: 0
+        y: 68
+        width: 25
+        height: 25
       alignment: 1
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: alphabat_27
       rect:
         serializedVersion: 2
-        x: 21
-        y: 65
-        width: 32
-        height: 32
+        x: 25
+        y: 68
+        width: 25
+        height: 25
       alignment: 1
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: alphabat_28
       rect:
         serializedVersion: 2
-        x: 55
-        y: 65
-        width: 32
-        height: 32
+        x: 59
+        y: 68
+        width: 25
+        height: 25
       alignment: 1
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: alphabat_29
       rect:
@@ -392,7 +399,7 @@ TextureImporter:
         width: 32
         height: 32
       alignment: 1
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: alphabat_30
       rect:
@@ -402,7 +409,7 @@ TextureImporter:
         width: 32
         height: 32
       alignment: 1
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: alphabat_31
       rect:
@@ -412,7 +419,7 @@ TextureImporter:
         width: 32
         height: 32
       alignment: 1
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: alphabat_32
       rect:
@@ -422,7 +429,7 @@ TextureImporter:
         width: 32
         height: 32
       alignment: 1
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: alphabat_33
       rect:
@@ -432,7 +439,7 @@ TextureImporter:
         width: 32
         height: 32
       alignment: 1
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: alphabat_34
       rect:
@@ -442,7 +449,7 @@ TextureImporter:
         width: 32
         height: 32
       alignment: 1
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: alphabat_35
       rect:
@@ -452,7 +459,7 @@ TextureImporter:
         width: 16
         height: 32
       alignment: 1
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: alphabat_36
       rect:
@@ -462,7 +469,7 @@ TextureImporter:
         width: 32
         height: 32
       alignment: 1
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: alphabat_37
       rect:
@@ -472,7 +479,7 @@ TextureImporter:
         width: 21
         height: 48
       alignment: 1
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: alphabat_38
       rect:
@@ -482,7 +489,7 @@ TextureImporter:
         width: 44
         height: 48
       alignment: 1
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: alphabat_39
       rect:
@@ -492,7 +499,7 @@ TextureImporter:
         width: 44
         height: 48
       alignment: 1
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: alphabat_40
       rect:
@@ -502,7 +509,7 @@ TextureImporter:
         width: 44
         height: 48
       alignment: 1
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: alphabat_41
       rect:
@@ -512,7 +519,7 @@ TextureImporter:
         width: 44
         height: 48
       alignment: 1
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: alphabat_42
       rect:
@@ -522,7 +529,7 @@ TextureImporter:
         width: 44
         height: 48
       alignment: 1
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: alphabat_43
       rect:
@@ -532,7 +539,7 @@ TextureImporter:
         width: 43
         height: 48
       alignment: 1
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: alphabat_44
       rect:
@@ -542,7 +549,7 @@ TextureImporter:
         width: 44
         height: 48
       alignment: 1
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: alphabat_45
       rect:
@@ -552,7 +559,7 @@ TextureImporter:
         width: 44
         height: 48
       alignment: 1
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: alphabat_46
       rect:
@@ -562,7 +569,19 @@ TextureImporter:
         width: 44
         height: 48
       alignment: 1
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
+    - name: alphabat_GO
+      rect:
+        serializedVersion: 2
+        x: 357
+        y: 81
+        width: 50
+        height: 25
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 1, y: 0, z: 0, w: 0}
   spritePackingTag: 
   userData: 
+  assetBundleName: 
+  assetBundleVariant: 
