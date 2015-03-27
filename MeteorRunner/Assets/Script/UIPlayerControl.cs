@@ -12,6 +12,8 @@ public class UIPlayerControl : MonoBehaviour {
 
 	GUIStyle m_progressStyle = null;
 
+	bool m_isDrawEnergyProgress = false;
+
 	void Start()
 	{
 		m_player = GameManager.Instance.getPlayerController ();
@@ -41,9 +43,12 @@ public class UIPlayerControl : MonoBehaviour {
 				GameManager.Instance.start();
 			}
 */
-			float barDisplay = m_player.getEnergy()/100.0f;
-			float fEnergyPercent = m_player.getEnergyPercent();
-			drawProgress (fEnergyPercent, barDisplay);
+			if (m_isDrawEnergyProgress)
+			{
+				float barDisplay = m_player.getEnergy()/100.0f;
+				float fEnergyPercent = m_player.getEnergyPercent();
+				drawProgress (fEnergyPercent, barDisplay);
+			}
 
 			break;
 		case GameManager.STATE.STATE_GAME:
@@ -55,9 +60,12 @@ public class UIPlayerControl : MonoBehaviour {
 		
 	void onGUI_Game()
 	{
-		float barDisplay = m_player.getEnergy();
-		float fEnergyPercent = m_player.getEnergyPercent ();
-		drawProgress (fEnergyPercent, barDisplay);
+		if (m_isDrawEnergyProgress)
+		{
+			float barDisplay = m_player.getEnergy();
+			float fEnergyPercent = m_player.getEnergyPercent ();
+			drawProgress (fEnergyPercent, barDisplay);
+		}
 	}
 
 	void drawProgress(float fPercent, float text)

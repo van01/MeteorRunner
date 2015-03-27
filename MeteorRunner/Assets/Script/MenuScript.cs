@@ -30,6 +30,8 @@ public class MenuScript : MonoBehaviour
 		{
 			// On Click, load the first level.
 			Application.LoadLevel("Ready"); // "Stage1" is the scene name
+
+			GoogleMobileAdsDemoScript.Instance.RequestBanner();
 		}
 	}
 }
