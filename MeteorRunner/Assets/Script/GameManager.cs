@@ -215,6 +215,9 @@ public class GameManager : MonoBehaviour {
 		m_UIGameReady.SetActive (false);
 		m_UIGameOver.SetActive (true);
 
+		//경험치 계산
+		PlayerData.instance.setExp (m_fScore);
+
 	}
 
 	//-------------------------------------------------------------------------------------

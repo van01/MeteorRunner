@@ -50,6 +50,7 @@ public class PlayerContoller : MonoBehaviour {
 		m_spRender = GetComponent<SpriteRenderer> ();
 		m_MaterialNormal = m_spRender.material;
 //		m_MaterialWhite = Resources.Load<Material> ("Font Material") as Material;
+		m_PlayerSpeed = PlayerData.instance.getSpeed();
 
 		m_vtMaxMove = GameObject.FindGameObjectWithTag ("Block").transform.position;
 	}
