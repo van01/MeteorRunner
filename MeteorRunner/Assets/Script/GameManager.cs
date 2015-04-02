@@ -218,6 +218,9 @@ public class GameManager : MonoBehaviour {
 		//경험치 계산
 		PlayerData.instance.setExp (m_fScore);
 
+		//sound play
+		SoundEffects.instance.setBGM (BGM.GAMEOVER);
+
 	}
 
 	//-------------------------------------------------------------------------------------

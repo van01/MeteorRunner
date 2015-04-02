@@ -1,30 +1,84 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-/// <summary>
-/// Creating instance of sounds from code with no effort
-/// </summary>
-public class SoundEffects : MonoBehaviour
+public enum BGM {
+	NONE,
+	LOBBY,
+	INGAME,
+	GAMEOVER
+};
+
+public class SoundEffects : Singleton<SoundEffects>
 {	
-	/// <summary>
-	/// Singleton
-	/// </summary>
-	public static SoundEffects Instance;
+	public AudioSource 	m_bgmAudio;
+	private BGM			m_bgmType = BGM.NONE;
+	
 
 	public AudioClip Button;
 	public AudioClip ObjectDrop;
 	public AudioClip Damage;
-	
-	void Awake()
+	public AudioClip BGM_Lobby;
+	public AudioClip BGM_InGame;
+	public AudioClip BGM_GameOver;
+
+	public void Awake()
 	{
-		// Register the singleton
-		if (Instance != null)
-		{
-			Debug.LogError("Multiple instances of SoundEffectsHelper!");
-		}
-		Instance = this;
+		Debug.Log ("SoundEffects : Awake");
+		DontDestroyOnLoad(this.gameObject);
 	}
 	
+	public void setBGM (BGM bgm)
+	{
+		if (m_bgmType == bgm)
+		{
+			return;
+		}
+
+		Debug.Log (m_bgmType + " > " + bgm);
+
+		m_bgmAudio.Stop ();
+		switch (bgm)
+		{
+		case BGM.NONE:
+			break;
+		case BGM.LOBBY:
+			MakeBGM(BGM_Lobby);
+			break;
+		case BGM.INGAME:
+			MakeBGM(BGM_InGame);
+			break;
+		case BGM.GAMEOVER:
+			MakeBGM(BGM_GameOver);
+			break;
+		}
+
+		switch (bgm)
+		{
+		case BGM.NONE:
+			break;
+		case BGM.LOBBY:
+			MakeBGM(BGM_Lobby);
+			break;
+		case BGM.INGAME:
+			MakeBGM(BGM_InGame);
+			break;
+		case BGM.GAMEOVER:
+			MakeBGM(BGM_GameOver);
+			break;
+		}
+
+		m_bgmType = bgm;
+	}
+
+
+	private void MakeBGM(AudioClip originalClip)
+	{
+		m_bgmAudio.transform.position = transform.position;
+		m_bgmAudio.PlayOneShot (originalClip);
+		m_bgmAudio.loop = true;
+	}
+	
+
 	public void MakeSound_Button()
 	{
 		MakeSound(Button);
@@ -46,7 +100,6 @@ public class SoundEffects : MonoBehaviour
 	/// <param name="originalClip"></param>
 	private void MakeSound(AudioClip originalClip)
 	{
-		// As it is not 3D audio clip, position doesn't matter.
 		AudioSource.PlayClipAtPoint(originalClip, transform.position);
 	}
 }
