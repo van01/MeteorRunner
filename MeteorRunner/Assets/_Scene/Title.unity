@@ -919,6 +919,7 @@ MonoBehaviour:
   Button: {fileID: 8300000, guid: 7c06d140b35785046a18cf3fb2bb03f3, type: 3}
   ObjectDrop: {fileID: 8300000, guid: 48240d14fa0333442a89684478d148dd, type: 3}
   Damage: {fileID: 8300000, guid: 6bc54e83c27ac3545a8aed97d1e36261, type: 3}
+  BackStep: {fileID: 8300000, guid: e5bcf61ecb45d65458b383d2b41683dc, type: 3}
   BGM_Lobby: {fileID: 8300000, guid: 42c461bf7d01d9241ad643541c92cac3, type: 3}
   BGM_InGame: {fileID: 8300000, guid: ef8b5c03ee4ba8f4fb22ed6304503290, type: 3}
   BGM_GameOver: {fileID: 8300000, guid: 4d38df92485c4b742aad0b8be28ccf1f, type: 3}

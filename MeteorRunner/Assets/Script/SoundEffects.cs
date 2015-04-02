@@ -23,6 +23,11 @@ public class SoundEffects : Singleton<SoundEffects>
 	public AudioClip BGM_InGame;
 	public AudioClip BGM_GameOver;
 
+	public void Start()
+	{
+
+	}
+
 	public void Awake()
 	{
 		Debug.Log ("SoundEffects : Awake");
@@ -37,6 +42,9 @@ public class SoundEffects : Singleton<SoundEffects>
 		}
 
 		Debug.Log (m_bgmType + " > " + bgm);
+
+		if (m_bgmAudio == null)
+			return;
 
 		m_bgmAudio.Stop ();
 		switch (bgm)
@@ -107,6 +115,9 @@ public class SoundEffects : Singleton<SoundEffects>
 	/// <param name="originalClip"></param>
 	private void MakeSound(AudioClip originalClip)
 	{
+		if (originalClip == null)
+			return;
+
 		AudioSource.PlayClipAtPoint(originalClip, transform.position);
 	}
 }

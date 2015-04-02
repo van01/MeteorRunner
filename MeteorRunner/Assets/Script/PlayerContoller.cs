@@ -148,7 +148,9 @@ public class PlayerContoller : MonoBehaviour {
 			EnemyObject bomb = collider.GetComponent<EnemyObject>();
 			bool isCheck = false;
 
-			if (m_nState != STATE.BACKSTEP && m_nSubState != SUBSTATE.CRASH)
+			if (m_nState != STATE.BACKSTEP && 
+			    m_nState != STATE.NOCKDOWN && 
+			    m_nSubState != SUBSTATE.CRASH)
 			{
 				isCheck = true;
 			}
