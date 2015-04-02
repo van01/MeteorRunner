@@ -16,25 +16,25 @@ public class UIButtonEvent : MonoBehaviour {
 
 	public void onGameStart()
 	{
+		SoundEffects.instance.MakeSound_Button ();
 		GameManager.Instance.changeState (GameManager.STATE.STATE_GAME);
 	}
 
 	public void onGameReload()
 	{
-		//Application.LoadLevel("Ready");
+		SoundEffects.instance.MakeSound_Button ();
 		ViewManager.instance.changeState (ViewState.READY);
 	}
 
 	public void onGamePlay()
 	{
 		SoundEffects.instance.MakeSound_Button ();
-//		Application.LoadLevel("Game");
 		ViewManager.instance.changeState (ViewState.GAME);
 	}
 
 	public void onGameReady()
 	{
-//		SoundEffects.instance.MakeSound_Button ();
+		SoundEffects.instance.MakeSound_Button ();
 		ViewManager.instance.changeState (ViewState.READY);
 	}
 }

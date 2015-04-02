@@ -17,6 +17,8 @@ public class SoundEffects : Singleton<SoundEffects>
 	public AudioClip Button;
 	public AudioClip ObjectDrop;
 	public AudioClip Damage;
+	public AudioClip BackStep;
+
 	public AudioClip BGM_Lobby;
 	public AudioClip BGM_InGame;
 	public AudioClip BGM_GameOver;
@@ -92,6 +94,11 @@ public class SoundEffects : Singleton<SoundEffects>
 	public void MakeSound_Damage()
 	{
 		MakeSound(Damage);
+	}
+
+	public void MakeSound_BackStep()
+	{
+		MakeSound (BackStep);
 	}
 	
 	/// <summary>

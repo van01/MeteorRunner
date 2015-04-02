@@ -215,6 +215,7 @@ public class PlayerContoller : MonoBehaviour {
 			break;
 		case STATE.NOCKDOWN:
 			m_nState = state;
+			SoundEffects.instance.MakeSound_Damage();
 			break;
 		}
 
@@ -333,6 +334,9 @@ public class PlayerContoller : MonoBehaviour {
 	public void skill (int nSkil)
 	{
 		setState (STATE.BACKSTEP);
+
+		//sound
+		SoundEffects.instance.MakeSound_BackStep ();
 
 		m_anim.SetInteger("STATE", (int)m_nState);
 	}
