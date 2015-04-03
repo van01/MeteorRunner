@@ -82,8 +82,18 @@ public class PlayerData : Singleton<PlayerData> {
 
 	public int getNextLevelUpExp()
 	{
-		Debug.Log ("m_arSpeedData["+m_nUserLevel+"].fExp : " + m_arSpeedData [m_nUserLevel].fExp);
+	//	Debug.Log ("m_arSpeedData["+m_nUserLevel+"].fExp : " + m_arSpeedData [m_nUserLevel].fExp);
 		return (int)m_arSpeedData[m_nUserLevel].fExp;
+	}
+
+	public int getSpeedLevel()
+	{
+		return m_nSpeedLevel;
+	}
+
+	public int getUserLevel()
+	{
+		return m_nUserLevel;
 	}
 
 	public void test()

@@ -417,7 +417,9 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: Booster
+  m_Text: 'Booster
+
+    Lv.0'
 --- !u!222 &308191077
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -715,9 +717,9 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: 'Back
+  m_Text: 'Evade
 
-    Step'
+    Lv.0'
 --- !u!222 &613021592
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -772,7 +774,7 @@ RectTransform:
   m_RootOrder: 0
   m_AnchorMin: {x: .5, y: .5}
   m_AnchorMax: {x: .5, y: .5}
-  m_AnchoredPosition: {x: 0, y: -1.52590001e-05}
+  m_AnchoredPosition: {x: 0, y: -6.10351562e-05}
   m_SizeDelta: {x: 800, y: 600}
   m_Pivot: {x: .5, y: .5}
 --- !u!114 &626212481
@@ -1358,6 +1360,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_LblPointObject: {fileID: 278108410}
   m_LblExpObject: {fileID: 2046361615}
+  m_LblSpeedLvObject: {fileID: 1542713966}
+  m_LblUserLvObject: {fileID: 2094798855}
 --- !u!114 &1238745062
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1532,7 +1536,9 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: Speed
+  m_Text: 'Speed
+
+    Lv.0'
 --- !u!222 &1542713969
 CanvasRenderer:
   m_ObjectHideFlags: 0
