@@ -1164,7 +1164,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 0958c1ce5916348c88129c2fd464d1cc, type: 2}
       propertyPath: m_RootOrder
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 0958c1ce5916348c88129c2fd464d1cc, type: 2}
       propertyPath: m_LocalScale.x
@@ -1914,6 +1914,7 @@ GameObject:
   - 222: {fileID: 1460198500}
   - 114: {fileID: 1460198499}
   - 114: {fileID: 1460198498}
+  - 114: {fileID: 1460198502}
   m_Layer: 5
   m_Name: Skill_Button
   m_TagString: UI
@@ -2018,6 +2019,19 @@ RectTransform:
   m_AnchoredPosition: {x: 78.5, y: 77.6999969}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: .5, y: .5}
+--- !u!114 &1460198502
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1460198497}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 70b9311f656844881b9956f22a35f426, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_texture: {fileID: 2800000, guid: e1365de0c8c4548c09aa57c377dfd890, type: 3}
+  m_color: {r: 1, g: 1, b: 1, a: .650980413}
 --- !u!1 &1527534440
 GameObject:
   m_ObjectHideFlags: 0
