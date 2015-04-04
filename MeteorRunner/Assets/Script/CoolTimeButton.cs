@@ -18,7 +18,7 @@ public class CoolTimeButton : MonoBehaviour {
 	
 	private float		m_fCheckStartTime 	= 0.0f;
 	private float		m_fDisableTime		= 0.0f;
-	private float		m_fDelayTime 		= 3.0f;
+	public float		m_fDelayTime 		= 3.0f;
 
 	// Use this for initialization
 	void Start () {
