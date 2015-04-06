@@ -57,6 +57,7 @@ public class CoolTimeButton : MonoBehaviour {
 
 	public void setDelayTime (float time)
 	{
+		Debug.Log ("setDelayTime : " + time);
 		m_fDelayTime = time;
 	}
 

@@ -42,7 +42,7 @@ public class GameManager : MonoBehaviour {
 		{
 			if (m_instance == null)
 			{
-//				container = new GameObject();  
+//			 	container = new GameObject();  
 //				container.name = "GameManager";  
 //				m_instance = container.AddComponent(typeof(GameManager)) as GameManager;  
 				m_instance = GameObject.FindObjectOfType (typeof(GameManager)) as GameManager;

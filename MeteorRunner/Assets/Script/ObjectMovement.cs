@@ -7,16 +7,16 @@ public class ObjectMovement : MonoBehaviour {
 	
 	// Use this for initialization
 	void Start () {
-		
+		m_fSpeed = -(PlayerData.instance.getSpeed () * 0.5f);
+		Debug.Log ("GameSpeed : " + m_fSpeed);
 	}
 	
 	// Update is called once per frame
 	void Update () {
-		Transform[] ts = gameObject.GetComponentsInChildren<Transform>();
-		
-		foreach (Transform t in ts) {
+		foreach (Transform t in transform) {
 			if (t != null && t.gameObject != null)
 			{
+
 
 				float fGameSpeed = GameManager.Instance.fGameSpeed;
 

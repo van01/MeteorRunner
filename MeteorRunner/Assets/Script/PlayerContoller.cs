@@ -51,6 +51,7 @@ public class PlayerContoller : MonoBehaviour {
 		m_MaterialNormal = m_spRender.material;
 //		m_MaterialWhite = Resources.Load<Material> ("Font Material") as Material;
 		m_PlayerSpeed = PlayerData.instance.getSpeed();
+		Debug.Log ("PlayerSpeed : " + m_PlayerSpeed);
 
 		m_vtMaxMove = GameObject.FindGameObjectWithTag ("Block").transform.position;
 	}
@@ -258,8 +259,10 @@ public class PlayerContoller : MonoBehaviour {
 	 ****************************************************/
 	float calcPosition (float fSpeed)
 	{
+		float fGameSpeed = GameManager.Instance.fGameSpeed;
 		m_vtLastPosition = this.transform.position;
-		float fScore = fSpeed * Time.deltaTime;
+
+		float fScore = fSpeed * Time.deltaTime * fGameSpeed;
 		m_vtLastPosition.x += fScore;
 		
 		if (m_vtLastPosition.x > m_vtMaxMove.x)

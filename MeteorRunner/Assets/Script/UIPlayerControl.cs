@@ -3,6 +3,8 @@ using System.Collections;
 
 public class UIPlayerControl : MonoBehaviour {
 
+	public GameObject m_skillButton = null;
+
 	public Texture2D m_imgStart = null;
 	public Texture2D m_imgConfirm = null;
 	private PlayerContoller m_player = null;
@@ -17,6 +19,10 @@ public class UIPlayerControl : MonoBehaviour {
 	void Start()
 	{
 		m_player = GameManager.Instance.getPlayerController ();
+
+
+		float nEvadeTime =PlayerData.instance.getEvadeLevelTime ();
+		m_skillButton.GetComponent<CoolTimeButton> ().setDelayTime (nEvadeTime);
 	}
 
 	// Use this for initialization
