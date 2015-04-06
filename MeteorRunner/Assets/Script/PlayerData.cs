@@ -15,6 +15,7 @@ public class PlayerData : Singleton<PlayerData> {
 	}
 	private static float m_fDefaultSpeed = 7.0f;
 	private static float m_fDefaultEvadeDelayTime = 30.0f;
+	private static float m_fSpeedRatio = 0.01f;		//스텟당 스피드 비율
 
 	private PlayerSpeedLevelData []m_arSpeedData;
 
@@ -64,17 +65,11 @@ public class PlayerData : Singleton<PlayerData> {
 		return (int)m_fExp;
 	}
 
-
 	public float getSpeed ()
 	{
 		//return 7.0f+(((float)m_nSpeedLevel)/10.0f);
 
-		float fSpeed = m_fDefaultSpeed;
-
-		for (int i=0; i<m_nSpeedLevel; i++)
-		{
-			fSpeed += (fSpeed * 0.05f);
-		}
+		float fSpeed = m_fDefaultSpeed + (m_fDefaultSpeed * m_fSpeedRatio * m_nSpeedLevel); 
 
 		Debug.Log ("game speed : " + fSpeed);
 

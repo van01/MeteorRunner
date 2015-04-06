@@ -7,7 +7,6 @@ public class BombCollider : MonoBehaviour {
 	{
 		BombObject bomb = collider.GetComponent<BombObject> ();
 		bomb.onExfired ();
-
 	}
 
 }
