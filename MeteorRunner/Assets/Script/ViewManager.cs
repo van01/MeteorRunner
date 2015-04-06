@@ -14,7 +14,7 @@ public class ViewManager : Singleton<ViewManager> {
 
 	// Use this for initialization
 	void Start () {
-		SoundEffects.instance.setBGM(BGM.LOBBY);
+
 	}
 	
 	// Update is called once per frame
