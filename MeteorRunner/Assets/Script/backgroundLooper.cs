@@ -15,13 +15,21 @@ public class backgroundLooper : MonoBehaviour {
 
 	void OnTriggerEnter2D (Collider2D collider)
 	{
-		Vector3 size = ((BoxCollider2D)collider).size;
-		Vector3 position = collider.transform.position;
-		Vector3 scale = collider.transform.localScale;
 
-		position.x += size.x * scale.x * 2;
+		if (collider.gameObject.tag == "BG_OBJECT")
+		{
+			Destroy (collider.gameObject);
+		}
+		else
+		{
+			Vector3 size = ((BoxCollider2D)collider).size;
+			Vector3 position = collider.transform.position;
+			Vector3 scale = collider.transform.localScale;
 
-		collider.transform.position = position;
+			position.x += size.x * scale.x * 2;
+
+			collider.transform.position = position;
+		}
 		
 	}
 

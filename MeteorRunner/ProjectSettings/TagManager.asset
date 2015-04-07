@@ -12,6 +12,7 @@ TagManager:
   - UI_GAMEOVER
   - UI_GAMEREADY
   - ENEMY_MONSTER
+  - BG_OBJECT
   layers:
   - Default
   - TransparentFX
@@ -27,7 +28,7 @@ TagManager:
   - BombCllider
   - Player
   - PlayerBlocker
-  - 
+  - BackgroundObject
   - 
   - 
   - 
