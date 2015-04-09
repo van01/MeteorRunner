@@ -15,8 +15,11 @@ public class PlayerData : Singleton<PlayerData> {
 	}
 	private static float m_fDefaultSpeed = 7.0f;
 	private static float m_fDefaultEvadeDelayTime = 30.0f;
-	public static float m_fSpeedRatio = 0.01f;		//스텟당 스피드 비율
-	public static float m_fEvadeRatio = 0.05f;
+
+	[Range(0.02f,0.5f)]
+	public float m_fSpeedRatio = 0.01f;		//스텟당 스피드 비율
+	[Range(0.02f,0.5f)]
+	public float m_fEvadeRatio = 0.05f;
 
 	private PlayerSpeedLevelData []m_arSpeedData;
 
