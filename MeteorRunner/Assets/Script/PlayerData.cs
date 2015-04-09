@@ -15,7 +15,8 @@ public class PlayerData : Singleton<PlayerData> {
 	}
 	private static float m_fDefaultSpeed = 7.0f;
 	private static float m_fDefaultEvadeDelayTime = 30.0f;
-	private static float m_fSpeedRatio = 0.01f;		//스텟당 스피드 비율
+	public static float m_fSpeedRatio = 0.01f;		//스텟당 스피드 비율
+	public static float m_fEvadeRatio = 0.05f;
 
 	private PlayerSpeedLevelData []m_arSpeedData;
 
@@ -111,7 +112,7 @@ public class PlayerData : Singleton<PlayerData> {
 
 	public float getEvadeLevelTime()
 	{
-		float nDelayTimePerPoint = (m_fDefaultEvadeDelayTime * 0.05f);
+		float nDelayTimePerPoint = (m_fDefaultEvadeDelayTime * m_fEvadeRatio);
 		float fDelayTime = m_fDefaultEvadeDelayTime - (nDelayTimePerPoint * m_nEvadeLevel);
 
 		if (fDelayTime < 0)
