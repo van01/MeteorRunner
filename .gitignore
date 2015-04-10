@@ -10,3 +10,5 @@ MeteorRunner/obj/Debug/Assembly-CSharp.dll
 MeteorRunner/obj/Debug/Assembly-CSharp.dll.mdb
 MeteorRunner/MeteorRunner.sublime-project
 MeteorRunner/MeteorRunner.sublime-workspace
+MeteorRunner/Assembly-CSharp-Editor-vs.csproj
+MeteorRunner/Assembly-CSharp-Editor.csproj
