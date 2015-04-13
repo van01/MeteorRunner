@@ -50,8 +50,7 @@ public class PlayerContoller : MonoBehaviour {
 		m_spRender = GetComponent<SpriteRenderer> ();
 		m_MaterialNormal = m_spRender.material;
 //		m_MaterialWhite = Resources.Load<Material> ("Font Material") as Material;
-		m_PlayerSpeed = PlayerData.instance.getSpeed();
-		Debug.Log ("PlayerSpeed : " + m_PlayerSpeed);
+		m_PlayerSpeed = 0.0f;
 
 		m_vtMaxMove = GameObject.FindGameObjectWithTag ("Block").transform.position;
 	}
@@ -199,6 +198,7 @@ public class PlayerContoller : MonoBehaviour {
 	{
 		Debug.Log ("STATE Start: " + m_nState +" -> " + state);
 
+		m_PlayerSpeed = 0;
 		STATE prevState = m_nState;
 		switch (state)
 		{
@@ -211,6 +211,7 @@ public class PlayerContoller : MonoBehaviour {
 		case STATE.RUN:
 			if (m_nState != STATE.NOCKDOWN)
 				m_nState = state;
+			m_PlayerSpeed = PlayerData.instance.getSpeed();
 			break;
 		case STATE.BACKSTEP:
 			if (m_nState != STATE.NOCKDOWN)
@@ -344,6 +345,11 @@ public class PlayerContoller : MonoBehaviour {
 		SoundEffects.instance.MakeSound_BackStep ();
 
 		m_anim.SetInteger("STATE", (int)m_nState);
+	}
+
+	public float getSpeed()
+	{
+		return m_PlayerSpeed;
 	}
 
 }

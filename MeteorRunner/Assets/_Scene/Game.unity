@@ -444,6 +444,74 @@ Canvas:
 Transform:
   m_PrefabParentObject: {fileID: 478756, guid: 0b202f59d7f9e41e8ab269846edebaee, type: 2}
   m_PrefabInternal: {fileID: 1337072867}
+--- !u!1 &347996611
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 224: {fileID: 347996612}
+  - 222: {fileID: 347996614}
+  - 114: {fileID: 347996613}
+  m_Layer: 5
+  m_Name: LBL_Speed
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &347996612
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 347996611}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 603305002}
+  m_RootOrder: 1
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 203.399994, y: -106.5}
+  m_SizeDelta: {x: 308.5, y: 50.7999878}
+  m_Pivot: {x: .5, y: .5}
+--- !u!114 &347996613
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 347996611}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 708705254, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FontData:
+    m_Font: {fileID: 12800000, guid: 841447e35ca5442e89c2586709a17727, type: 3}
+    m_FontSize: 25
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 10
+    m_MaxSize: 40
+    m_Alignment: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: 'Speed:
+
+    Skill cootime : '
+--- !u!222 &347996614
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 347996611}
 --- !u!1001 &349729441
 Prefab:
   m_ObjectHideFlags: 0
@@ -832,6 +900,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1638102961}
+  - {fileID: 347996612}
   m_Father: {fileID: 732748598}
   m_RootOrder: 0
   m_AnchorMin: {x: 0, y: 0}
@@ -2736,6 +2805,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_skillButton: {fileID: 1550816069}
+  m_LblSpeed: {fileID: 347996613}
   m_imgStart: {fileID: 2800000, guid: 3edefb7c2b73142cdb021b1b55587baa, type: 3}
   m_imgConfirm: {fileID: 2800000, guid: 33783a0fa63254d8480d7913cffc80ae, type: 3}
   m_progressBarEmpty: {fileID: 2800000, guid: 7af3c8672f1bb4847b3553172cf8f197, type: 3}

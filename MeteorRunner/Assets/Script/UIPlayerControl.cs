@@ -1,9 +1,12 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.UI;
 
 public class UIPlayerControl : MonoBehaviour {
 
 	public GameObject m_skillButton = null;
+
+	public Text m_LblSpeed;
 
 	public Texture2D m_imgStart = null;
 	public Texture2D m_imgConfirm = null;
@@ -23,6 +26,13 @@ public class UIPlayerControl : MonoBehaviour {
 
 		float nEvadeTime =PlayerData.instance.getEvadeLevelTime ();
 		m_skillButton.GetComponent<CoolTimeButton> ().setDelayTime (nEvadeTime);
+	}
+
+	void Update()
+	{
+		m_LblSpeed.text = "Speed : " + PlayerData.instance.getSpeed () + 
+						"\nSkill CoolTime : " + PlayerData.instance.getEvadeLevelTime ();
+						  
 	}
 
 	// Use this for initialization
