@@ -7,6 +7,7 @@ public class UIPlayerProperties : MonoBehaviour {
 	public GameObject m_LblPointObject;
 	public GameObject m_LblUserLvObject;
 	public GameObject m_LblExpObject;
+	public Slider	  m_SliderExp;
 
 	public GameObject m_LblSpeedLvObject;
 	public GameObject m_LblBoosterLvObject;
@@ -62,6 +63,7 @@ public class UIPlayerProperties : MonoBehaviour {
 	{
 		m_LblPoint.text = "("+PlayerData.instance.getUpPoint()+")";
 		m_LblExp.text = " " + PlayerData.instance.getExp() + "/ " + PlayerData.instance.getNextLevelUpExp();
+		m_SliderExp.value = (float)PlayerData.instance.getExp() / (float)PlayerData.instance.getNextLevelUpExp();
 
 		m_LblSpeedLv.text = "Speed\nLv." + PlayerData.instance.getSpeedLevel();
 		m_LblBoosterLv.text = "Booster\nLv.0";

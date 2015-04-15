@@ -55,8 +55,8 @@ public class PlayerData : Singleton<PlayerData> {
 		for (int i=0; i<m_arSpeedData.Length; i++)
 		{
 			m_arSpeedData[i] = new PlayerSpeedLevelData();
-//			m_arSpeedData[i].setData (i, (i+1)*10);
-			m_arSpeedData[i].setData (i, 1);
+			m_arSpeedData[i].setData (i, (i+1)*10);
+//			m_arSpeedData[i].setData (i, 1);
 		}
 	}
 
